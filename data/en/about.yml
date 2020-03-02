@@ -1,0 +1,125 @@
+################################## About #####################################
+about:
+  enable : true
+  image : "images/company/about.jpg"
+  title : "We strive to be the best and <br> make awesome work."
+  content : "We've been looking for technology that brings our communication strategy to another level. Rather than expecting people 
+            to get the knowledge they need, we can get you up to speed and work with your team on getting the best of the results.
+            <br>
+            Test!"
+
+  button:
+    enable : true
+    label : "Talk to us!"
+    link : "contact"
+
+  funfacts:
+    enable : true
+    feature_item:
+    # funfacts loop
+      - icon : "ion-ios-flask-outline" #ionicon pack v2 : https://ionicons.com/v2/
+        name : "Completed Projects"
+        count : "349"
+        
+      # funfacts loop
+      - icon : "ion-ios-flame-outline" #ionicon pack v2 : https://ionicons.com/v2/
+        name : "Lines Of Code"
+        count : "35000"
+        
+      # funfacts loop
+      - icon : "ion-ios-pint-outline" #ionicon pack v2 : https://ionicons.com/v2/
+        name : "Satisfied Customer"
+        count : "70"
+        
+      # funfacts loop
+      - icon : "ion-ios-wineglass-outline" #ionicon pack v2 : https://ionicons.com/v2/
+        name : "Awards Winner"
+        count : "10"
+        
+      # funfacts loop
+      - icon : "ion-ios-chatboxes-outline" #ionicon pack v2 : https://ionicons.com/v2/
+        name : "Satisfied Customer"
+        count : "75"
+        
+      # funfacts loop
+      - icon : "ion-ios-body-outline" #ionicon pack v2 : https://ionicons.com/v2/
+        name : "Awards Winner"
+        count : "20"
+      
+################################ feature #####################################
+
+features:
+  enable : true
+  title : "Our Services"
+  feature_item:
+    # service item loop
+    - icon : ion-coffee #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Solutions design 
+      content: "Businesses have different needs, requirements and goals. We can take full development or work with your team!"
+
+    # service item loop
+    - icon : ion-earth #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Mobile and web 
+      content: "Mobilde and web design with the development of modern progressive application with focus on users and business."
+
+    # service item loop
+    - icon : ion-headphone #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Chatbots
+      content: "Creating chatbots is trivial, our value comes also on helping with bridgeing to business and extract the vlaue your need."
+
+    # service item loop
+    - icon : ion-bug #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Artificial Intelligence
+      content: "Governance, workflows, deployment, monitoring and decisions are some of the considerations to have on the era of AI."
+
+    # service item loop
+    - icon : ion-lock-combination #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Internet of Things
+      content: "Our focus is on getting data into public or private clouds, and give all the meaning and value to your data."
+
+    # service item loop
+    - icon : ion-bug #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Robotic Process Automation
+      content: "In the era of Digitalization and Digital Transformation, is vital to have smart process automation for growing businesses."
+
+    # service item loop
+    - icon : ion-planet #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Blockchain
+      content: "Get started with Blockchain. The technology will be widely adopted and we can help your start"
+
+    # service item loop
+    - icon : ion-compass #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Legacy Tranformation
+      content: "We can help to re-eengineer your legacy systems, and build modern applications that can scale your business."
+    
+    # service item loop
+    - icon : ion-ios-color-filter-outline #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: True Tech Experiences
+      content: "Design and develop amazing experience on Android TV, Auto and Wereables with the user experience your target deserves."
+
+
+#################################### testimonial & mission vision #######################################
+testimonial:
+  enable : false
+  # testimonial content comes from "data/*/homepage.yml" file
+
+mission_vision:
+  enable : true
+  tabs:
+    # tab item loop
+    - name : "Vision"
+      content : "It's not about us, it's about you! We have the experience and vision to drive your business to success. "
+      
+    # tab item loop
+    - name : "Mission"
+      content : "Wathever is on private cloud, public cloud we are here to help transforming your business. Take the ultimate experince on technology"
+      
+    # tab item loop
+    - name : "Approach"
+      content : "We help you simplify, with the best experince and focus on understanding the business goals and challenges let's build success."
+
+
+############################# call to action #################################
+cta:
+  enable : true
+  # call to action content comes from "data/*/homepage.yml"

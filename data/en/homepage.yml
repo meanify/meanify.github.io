@@ -1,0 +1,120 @@
+############################### Banner ##############################
+banner:
+  enable : true
+  bg_image : "images/slider-bg.jpg"
+  title : "A real company <br/> in the era of digital "
+  content : "We love challenges in the cloud and the work we do. We work closely with our clients to deliver the best possible solutions for their needs"
+  button:
+    enable : true
+    label : "Discover Our Project, talk to us"
+    link : "contact"
+
+############################# About #################################
+about:
+  enable : true
+  title : "About Us"
+  description : "We are a company working delivering solutions and we love to mix Cloud, Internet of Things and Artifitial Intelligence"
+  content : "
+  Whether your company is trying to increase productivity, revamp customer experiences, or make direct sales, most of the time AI is the answer, 
+  but AI has some best friends as the cloud (private, public or even hybrid) and IoT. 
+  
+  
+  We are experience and love data streams that consumes and gives meaning and value to your data. We can help onboard data from the ground field using the right
+  and economic solution that's available and we will fight back if you are not taking the right direction. 
+  
+  
+  If you don't have a challenge, we will provide you some, your business will have reasons to smile.
+  "
+
+  button:
+    enable : true
+    label : "Let's talk?"
+    link : "contact"
+  
+  image : "images/wrapper-img.png"
+
+  
+
+
+######################### Portfolio ###############################
+portfolio:
+  enable : true
+  bg_image : "images/featue-bg.jpg"
+  title : "WE BELIEVE IN GREAT IDEAS"
+  content : "
+  There’s no doubt technology is ushering in some fascinating new ways of connecting brands with consumers. The company that makes things more easy to consume is the one that best sell it. 
+
+
+  We would love to discuss and take forward some innovation and would like to brainstorm some ideas for your business. We can make it work and make happen. 
+  "
+  button:
+    enable : true
+    label : "Let's talk?"
+    link : "contact"
+
+
+############################# Service ############################
+service:
+  enable : true
+  # service content comes from "data/*/service.yml" file
+
+
+############################ call to action ###########################
+cta:
+  enable : true
+  bg_image : "images/call-to-action-bg.jpg"
+  title : "We design delightful digital experiences."
+  content : "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  button:
+    enable : true
+    label : "Tell Us Your Story"
+    link : "contact"
+
+############################# Funfacts ###############################
+funfacts:
+  enable : false
+  title : "Fun Facts About Us"
+  description : "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
+          blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
+  funfact_item:
+    # funfacts item loop
+    - icon : "ion-ios-chatboxes-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Cups Of Coffee"
+      count : "99"
+      
+    # funfacts item loop
+    - icon : "ion-ios-glasses-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Article Written"
+      count : "45"
+      
+    # funfacts item loop
+    - icon : "ion-ios-compose-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Projects Completed"
+      count : "125"
+      
+    # funfacts item loop
+    - icon : "ion-ios-timer-outline" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Combined Projects"
+      count : "200"
+
+  testimonial_slider:
+    # testimonial item loop
+    - name : "Raymond Roy"
+      image : "images/clients/avater-1.jpg"
+      designation : "CEO-Themefisher"
+      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
+                ideas we feel that our site has unique elements that make us stand out from the crowd."
+                
+    # testimonial item loop
+    - name : "Randi Renin"
+      image : "images/clients/avater-1.jpg"
+      designation : "CEO-Themefisher"
+      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
+                ideas we feel that our site has unique elements that make us stand out from the crowd."
+                
+    # testimonial item loop
+    - name : "Rose Rio"
+      image : "images/clients/avater-3.jpg"
+      designation : "CEO-Themefisher"
+      content : "This Company created an e-commerce site with the tools to make our business a success, with innovative
+                ideas we feel that our site has unique elements that make us stand out from the crowd."

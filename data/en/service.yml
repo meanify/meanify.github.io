@@ -1,0 +1,82 @@
+########################### about service #############################
+about:
+  enable : true
+  title : "Innovation and impossibles"
+  content : "Innovation by making the impossibles possible! 
+    Most os the times we just need to be creative to get the impossibles possible. That's what we love to do, so bring your impoosibles and we can work together." 
+  image : "images/company/company-group-pic.jpg"
+
+
+########################## featured service ############################
+featured_service:
+  enable : true
+  service_item:
+    # featured service item loop
+    - name : "Best of Cloud"
+      icon : "ion-erlenmeyer-flask"
+      color : "primary"
+      content : "We take care of the challenges of designing the solution you really expect."
+      
+    # featured service item loop
+    - name : "Bring challenges"
+      icon : "ion-leaf"
+      color : "primary-dark"
+      content : "Experinced in customer challenges, we help your organization to make the difference."
+      
+    # featured service item loop
+    - name : "Innovation"
+      icon : "ion-lightbulb"
+      color : "primary-darker"
+      content : "If others say it's impossible, let us know, we are happy with those kind of challenges."
+
+      
+############################# Service ###############################
+service:
+  enable : true
+  title : "Our Services"
+  description : "Our services are far far away, behind the traditional ones, they feed from your requirements getting on results!"
+  service_item:
+    # service item loop
+    - icon : ion-coffee #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Solutions design 
+      content: "Businesses have different needs, requirements and goals. We can take full development or work with your team!"
+
+    # service item loop
+    - icon : ion-earth #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Mobile and web 
+      content: "Mobilde and web design with the development of modern progressive application with focus on users and business."
+
+    # service item loop
+    - icon : ion-headphone #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Chatbots
+      content: "Creating chatbots is trivial, our value comes also on helping with bridgeing to business and extract value."
+
+    # service item loop
+    - icon : ion-bug #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Artificial Intelligence
+      content: "Governance, workflows, deployment, monitoring and decisions are some of the considerations to have on the era of AI."
+
+    # service item loop
+    - icon : ion-lock-combination #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Internet of Things
+      content: "Our focus is on getting data into public or private clouds, and give all the meaning and value to your data."
+
+    # service item loop
+    - icon : ion-bug #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Robotic Process Automation
+      content: "In the era of Digitalization and Digital Transformation, is vital to have smart process automation for growing businesses."
+
+    # service item loop
+    - icon : ion-planet #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: True Tech Experiences
+      content: "Design and develop amazing experience on Android TV, Auto and Wereables with the user experience your target deserves."
+
+    # service item loop
+    - icon : ion-compass #ionicon pack v2 : https://ionicons.com/v2/ #ionicon pack v2 : https://ionicons.com/v2/
+      name: Legacy Tranformation
+      content: "We can help to re-eengineer your legacy systems, and build modern applications that can scale your business."
+      
+############################# call to action #################################
+cta:
+  enable : true
+  # call to action content comes from "data/*/homepage.yml"
