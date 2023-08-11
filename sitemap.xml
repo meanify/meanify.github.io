@@ -1,48 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://meanify.github.io/blog/</loc>
     <lastmod>2020-10-18T10:07:21+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/</loc>
     <lastmod>2020-10-18T10:07:21+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/blog/smart-indexing/</loc>
     <lastmod>2020-10-18T10:07:21+06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/contact/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/faq/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/privacy-policy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/about/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://meanify.github.io/terms-conditions/</loc>
   </url>
-  
 </urlset>
