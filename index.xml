@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MEANIFY | All the meaning from your data!</title>
-    <link>https://meanify.github.io/</link>
+    <link>https://www.meanify.eu/</link>
     <description>Recent content on MEANIFY | All the meaning from your data!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Oct 2020 10:07:21 +0600</lastBuildDate><atom:link href="https://meanify.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Oct 2020 10:07:21 +0600</lastBuildDate><atom:link href="https://www.meanify.eu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Smart indexing your business</title>
-      <link>https://meanify.github.io/blog/smart-indexing/</link>
+      <link>https://www.meanify.eu/blog/smart-indexing/</link>
       <pubDate>Sun, 18 Oct 2020 10:07:21 +0600</pubDate>
       
-      <guid>https://meanify.github.io/blog/smart-indexing/</guid>
+      <guid>https://www.meanify.eu/blog/smart-indexing/</guid>
       <description>Going behind full-text indexing for improved search results It is common to perform indexing of documents and do full-text indexing.</description>
     </item>
     
