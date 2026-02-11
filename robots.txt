@@ -1,0 +1,11 @@
+# Meanify.eu Robots.txt
+User-agent: *
+Allow: /
+Disallow: /design/
+
+# Sitemap
+Sitemap: https://www.meanify.eu/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+User-agent: AdsBot-Google
+Allow: /
