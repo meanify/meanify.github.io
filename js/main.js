@@ -341,22 +341,51 @@
   }
 
 
+  /* ---------- Formspree Helper ---------- */
+
+  var FORMSPREE_URL = 'https://formspree.io/f/maqdewdz';
+
+  function submitToFormspree(form, onSuccess, onError) {
+    var formData = new FormData(form);
+
+    fetch(FORMSPREE_URL, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(function (response) {
+      if (response.ok) {
+        onSuccess();
+      } else {
+        return response.json().then(function (data) {
+          throw new Error(data.error || 'Form submission failed');
+        });
+      }
+    })
+    .catch(function (err) {
+      onError(err);
+    });
+  }
+
+
   /* ---------- Contact Form ---------- */
 
   function initContactForm() {
     var form = document.getElementById('contactForm');
     if (!form) return;
 
+    var submitBtn = form.querySelector('[type="submit"]');
+    var originalBtnText = submitBtn ? submitBtn.textContent : '';
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      var firstName = form.querySelector('#firstName').value.trim();
-      var lastName = form.querySelector('#lastName').value.trim();
-      var email = form.querySelector('#workEmail').value.trim();
-      var objective = form.querySelector('#objective').value.trim();
+      var name = form.querySelector('[name="name"]').value.trim();
+      var email = form.querySelector('[name="email"]').value.trim();
+      var message = form.querySelector('[name="message"]').value.trim();
 
       // Basic validation
-      if (!firstName || !lastName || !email) {
+      if (!name || !email || !message) {
         var msgs = {
           en: 'Please fill in all required fields.',
           pt: 'Por favor, preencha todos os campos obrigatórios.'
@@ -376,24 +405,37 @@
         return;
       }
 
-      // Build mailto link as a simple fallback
-      var subject = encodeURIComponent('System Briefing Request - ' + firstName + ' ' + lastName);
-      var body = encodeURIComponent(
-        'Name: ' + firstName + ' ' + lastName + '\n' +
-        'Email: ' + email + '\n' +
-        'Objective: ' + objective
+      // Show loading state
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = currentLang === 'pt' ? 'A enviar...' : 'Sending...';
+      }
+
+      submitToFormspree(form,
+        function () {
+          var successMsgs = {
+            en: 'Thank you! Your message has been sent successfully.',
+            pt: 'Obrigado! A sua mensagem foi enviada com sucesso.'
+          };
+          alert(successMsgs[currentLang] || successMsgs.en);
+          form.reset();
+        },
+        function () {
+          var errorMsgs = {
+            en: 'Something went wrong. Please try again or email us at info@meanify.eu.',
+            pt: 'Algo correu mal. Por favor tente novamente ou envie email para info@meanify.eu.'
+          };
+          alert(errorMsgs[currentLang] || errorMsgs.en);
+        }
       );
 
-      window.location.href = 'mailto:info@meanify.eu?subject=' + subject + '&body=' + body;
-
-      // Show success message
-      var successMsgs = {
-        en: 'Thank you! Your email client will open shortly.',
-        pt: 'Obrigado! O seu cliente de email abrirá em breve.'
-      };
-      alert(successMsgs[currentLang] || successMsgs.en);
-
-      form.reset();
+      // Always restore button after a timeout (covers edge cases)
+      setTimeout(function () {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = originalBtnText;
+        }
+      }, 5000);
     });
   }
 
@@ -404,11 +446,13 @@
     var form = document.getElementById('newsletterForm');
     if (!form) return;
 
+    var submitBtn = form.querySelector('[type="submit"]');
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
-      var emailInput = form.querySelector('.footer__newsletter-input');
-      var email = emailInput.value.trim();
+      var emailInput = form.querySelector('[name="email"]');
+      var email = emailInput ? emailInput.value.trim() : '';
 
       var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (!email || !emailRegex.test(email)) {
@@ -420,13 +464,27 @@
         return;
       }
 
-      var successMsgs = {
-        en: 'Thank you for subscribing!',
-        pt: 'Obrigado pela sua subscrição!'
-      };
-      alert(successMsgs[currentLang] || successMsgs.en);
+      if (submitBtn) submitBtn.disabled = true;
 
-      form.reset();
+      submitToFormspree(form,
+        function () {
+          var successMsgs = {
+            en: 'Thank you for subscribing!',
+            pt: 'Obrigado pela sua subscrição!'
+          };
+          alert(successMsgs[currentLang] || successMsgs.en);
+          form.reset();
+          if (submitBtn) submitBtn.disabled = false;
+        },
+        function () {
+          var errorMsgs = {
+            en: 'Something went wrong. Please try again.',
+            pt: 'Algo correu mal. Por favor tente novamente.'
+          };
+          alert(errorMsgs[currentLang] || errorMsgs.en);
+          if (submitBtn) submitBtn.disabled = false;
+        }
+      );
     });
   }
 

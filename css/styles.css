@@ -612,7 +612,6 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 3px solid var(--color-primary);
 }
 
 .edge__card-number {
@@ -623,6 +622,7 @@ textarea {
   margin-bottom: 20px;
   letter-spacing: -0.02em;
   line-height: 1;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .edge__card-title {
@@ -636,6 +636,11 @@ textarea {
   font-size: 0.9375rem;
   color: var(--color-text-muted);
   line-height: 1.7;
+}
+
+.edge__card:hover .edge__card-number {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .edge__card-back .edge__card-number {
@@ -733,7 +738,6 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 3px solid var(--color-primary);
 }
 
 .pillar__back-title {

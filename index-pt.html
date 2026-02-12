@@ -605,46 +605,43 @@
             </div>
           </div>
           <div class="lg:w-1/2 w-full relative z-10">
-            <form class="space-y-6 sm:space-y-8">
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-                <div>
-                  <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Primeiro nome</label>
-                  <input
-                    class="w-full bg-transparent border-0 border-b-2 border-slate-800 text-white p-0 pb-3 focus:ring-0 focus:border-primary transition-colors"
-                    placeholder="Joana"
-                    type="text"
-                  />
-                </div>
-                <div>
-                  <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Ultimo nome</label>
-                  <input
-                    class="w-full bg-transparent border-0 border-b-2 border-slate-800 text-white p-0 pb-3 focus:ring-0 focus:border-primary transition-colors"
-                    placeholder="Silva"
-                    type="text"
-                  />
-                </div>
-              </div>
+            <form id="contactForm" class="space-y-6 sm:space-y-8" action="https://formspree.io/f/maqdewdz" method="POST">
               <div>
-                <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Email profissional</label>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">O seu nome</label>
                 <input
+                  name="name"
                   class="w-full bg-transparent border-0 border-b-2 border-slate-800 text-white p-0 pb-3 focus:ring-0 focus:border-primary transition-colors"
-                  placeholder="joana@empresa.com"
-                  type="email"
+                  placeholder="Joana Silva"
+                  type="text"
+                  required
                 />
               </div>
               <div>
-                <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Objetivo</label>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Email</label>
+                <input
+                  name="email"
+                  class="w-full bg-transparent border-0 border-b-2 border-slate-800 text-white p-0 pb-3 focus:ring-0 focus:border-primary transition-colors"
+                  placeholder="joana@empresa.com"
+                  type="email"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Mensagem</label>
                 <textarea
+                  name="message"
                   class="w-full bg-transparent border-0 border-b-2 border-slate-800 text-white p-0 pb-3 focus:ring-0 focus:border-primary transition-colors resize-none"
-                  placeholder="Principal desafio operacional..."
+                  placeholder="O que gostaria de discutir?"
                   rows="2"
+                  required
                 ></textarea>
               </div>
+              <input type="hidden" name="_subject" value="Contact Form Submission">
               <button
                 class="w-full py-5 bg-primary text-white font-bold text-sm uppercase tracking-widest hover:brightness-110 transition-all shadow-xl shadow-primary/20"
                 type="submit"
               >
-                Solicitar briefing do sistema
+                Enviar Pedido de Contacto
               </button>
             </form>
           </div>
@@ -691,17 +688,20 @@
             </ul>
           </div>
           <div>
-            <h5 class="text-xs font-bold uppercase tracking-[0.2em] mb-8 text-slate-900 dark:text-white">Briefing</h5>
+            <h5 class="text-xs font-bold uppercase tracking-[0.2em] mb-8 text-slate-900 dark:text-white">Newsletter</h5>
             <p class="text-xs text-slate-500 dark:text-slate-400 mb-6 font-bold uppercase tracking-widest">
               Subscreva atualizacoes de inteligencia.
             </p>
-            <form class="flex border-b-2 border-slate-300 dark:border-slate-700">
+            <form id="newsletterForm" class="flex border-b-2 border-slate-300 dark:border-slate-700" action="https://formspree.io/f/maqdewdz" method="POST">
               <input
+                name="email"
                 class="w-full bg-transparent border-0 px-0 py-2 text-xs font-bold uppercase tracking-widest focus:ring-0 placeholder:text-slate-400"
                 placeholder="ENDERECO DE EMAIL"
                 type="email"
+                required
               />
-              <button class="p-2 text-primary hover:translate-x-1 transition-transform">
+              <input type="hidden" name="_subject" value="Newsletter Subscription">
+              <button type="submit" class="p-2 text-primary hover:translate-x-1 transition-transform">
                 <span class="material-symbols-outlined">arrow_forward</span>
               </button>
             </form>
@@ -746,6 +746,100 @@
         document.addEventListener("keydown", (event) => {
           if (event.key === "Escape") closeMenu();
         });
+      })();
+    </script>
+
+    <!-- Formspree Integration -->
+    <script>
+      (function () {
+        var FORMSPREE_URL = 'https://formspree.io/f/maqdewdz';
+
+        function submitToFormspree(form, onSuccess, onError) {
+          var formData = new FormData(form);
+          fetch(FORMSPREE_URL, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          })
+          .then(function (response) {
+            if (response.ok) { onSuccess(); }
+            else { throw new Error('Submission failed'); }
+          })
+          .catch(function () { onError(); });
+        }
+
+        // Contact Form
+        var contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+          var contactBtn = contactForm.querySelector('[type="submit"]');
+          var originalContactText = contactBtn ? contactBtn.textContent : '';
+
+          contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var name = contactForm.querySelector('[name="name"]').value.trim();
+            var email = contactForm.querySelector('[name="email"]').value.trim();
+            var message = contactForm.querySelector('[name="message"]').value.trim();
+
+            if (!name || !email || !message) {
+              alert('Por favor, preencha todos os campos obrigatórios.');
+              return;
+            }
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+              alert('Por favor, introduza um endereço de email válido.');
+              return;
+            }
+
+            if (contactBtn) {
+              contactBtn.disabled = true;
+              contactBtn.textContent = 'A enviar...';
+            }
+
+            submitToFormspree(contactForm,
+              function () {
+                alert('Obrigado! A sua mensagem foi enviada com sucesso.');
+                contactForm.reset();
+                if (contactBtn) { contactBtn.disabled = false; contactBtn.textContent = originalContactText; }
+              },
+              function () {
+                alert('Algo correu mal. Por favor tente novamente ou envie email para info@meanify.eu.');
+                if (contactBtn) { contactBtn.disabled = false; contactBtn.textContent = originalContactText; }
+              }
+            );
+          });
+        }
+
+        // Newsletter Form
+        var newsletterForm = document.getElementById('newsletterForm');
+        if (newsletterForm) {
+          var newsletterBtn = newsletterForm.querySelector('[type="submit"]');
+
+          newsletterForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var emailInput = newsletterForm.querySelector('[name="email"]');
+            var email = emailInput ? emailInput.value.trim() : '';
+
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+              alert('Por favor, introduza um endereço de email válido.');
+              return;
+            }
+
+            if (newsletterBtn) newsletterBtn.disabled = true;
+
+            submitToFormspree(newsletterForm,
+              function () {
+                alert('Obrigado pela sua subscrição!');
+                newsletterForm.reset();
+                if (newsletterBtn) newsletterBtn.disabled = false;
+              },
+              function () {
+                alert('Algo correu mal. Por favor tente novamente.');
+                if (newsletterBtn) newsletterBtn.disabled = false;
+              }
+            );
+          });
+        }
       })();
     </script>
   </body>

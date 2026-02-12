@@ -81,15 +81,19 @@ const translations = {
 
     // Contact
     contact: {
-      label: "Briefing",
+      label: "Newsletter",
       title: "Scale your intelligence",
       subtitle: "Consult with our senior architects to blueprint your enterprise transformation.",
-      firstName: "First Name",
-      lastName: "Last Name",
-      workEmail: "Work Email",
-      objective: "Objective",
-      objectivePlaceholder: "Primary operational challenge...",
-      submit: "Request System Briefing"
+      name: "Your Name",
+      namePlaceholder: "Jane Doe",
+      email: "Email",
+      emailPlaceholder: "jane@company.com",
+      message: "Message",
+      messagePlaceholder: "What would you like to discuss?",
+      submit: "Submit Contact Request",
+      sending: "Sending...",
+      successMessage: "Thank you! Your message has been sent successfully.",
+      errorMessage: "Something went wrong. Please try again or email us at info@meanify.eu."
     },
 
     // Footer
@@ -105,7 +109,7 @@ const translations = {
       research: "Research",
       pressTitle: "Press",
       newsroom: "Newsroom",
-      briefingTitle: "Briefing",
+      briefingTitle: "Newsletter",
       newsletterText: "Subscribe to intelligence updates",
       emailPlaceholder: "Email address",
       copyright: "© 2026 MEANIFY INC. ALL RIGHTS RESERVED",
@@ -227,15 +231,19 @@ const translations = {
 
     // Contact
     contact: {
-      label: "Briefing",
+      label: "Newsletter",
       title: "Escale a sua inteligência",
       subtitle: "Consulte os nossos arquitetos seniores para planear a transformação da sua empresa.",
-      firstName: "Nome",
-      lastName: "Apelido",
-      workEmail: "Email Profissional",
-      objective: "Objetivo",
-      objectivePlaceholder: "Principal desafio operacional...",
-      submit: "Solicitar Briefing do Sistema"
+      name: "O seu nome",
+      namePlaceholder: "Joana Silva",
+      email: "Email",
+      emailPlaceholder: "joana@empresa.com",
+      message: "Mensagem",
+      messagePlaceholder: "O que gostaria de discutir?",
+      submit: "Enviar Pedido de Contacto",
+      sending: "A enviar...",
+      successMessage: "Obrigado! A sua mensagem foi enviada com sucesso.",
+      errorMessage: "Algo correu mal. Por favor tente novamente ou envie email para info@meanify.eu."
     },
 
     // Footer
@@ -251,7 +259,7 @@ const translations = {
       research: "Investigação",
       pressTitle: "Imprensa",
       newsroom: "Sala de Imprensa",
-      briefingTitle: "Briefing",
+      briefingTitle: "Newsletter",
       newsletterText: "Subscreva atualizações de inteligência",
       emailPlaceholder: "Endereço de email",
       copyright: "© 2026 MEANIFY INC. TODOS OS DIREITOS RESERVADOS",
