@@ -128,7 +128,7 @@ const translations = {
       s3Title: "3. Data Storage and Security",
       s3Text: "Your data is stored securely and we implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. We retain your data only for as long as necessary to fulfill the purposes outlined in this policy.",
       s4Title: "4. Cookies",
-      s4Text: "Our website uses essential cookies to store your language and theme preferences locally in your browser. We do not use tracking cookies or third-party advertising cookies. The only external service loaded is Google Fonts for typography.",
+      s4Text: "Our website uses essential cookies to store your language and theme preferences locally in your browser. With your consent, we use Google Analytics to collect anonymous usage data to improve our website. Google Fonts is loaded for typography. We do not use third-party advertising cookies.",
       s5Title: "5. Your Rights",
       s5Text: "Under the General Data Protection Regulation (GDPR) and applicable Portuguese law, you have the right to access, rectify, delete, or restrict processing of your personal data. You may also withdraw consent at any time. To exercise these rights, contact us at info@meanify.eu.",
       s6Title: "6. Contact",
@@ -151,6 +151,13 @@ const translations = {
       s5Text: "These terms shall be governed by and construed in accordance with the laws of Portugal and the European Union. Any disputes shall be subject to the exclusive jurisdiction of the courts of Évora, Portugal.",
       s6Title: "6. Contact",
       s6Text: "For questions about these terms, please contact us at info@meanify.eu or call +351 962 390 920. Our registered address is ÉvoraTech, Évora, Portugal."
+    },
+
+    // Cookie Consent
+    cookie: {
+      message: "We use cookies and analytics to improve your experience. You can accept or decline non-essential cookies.",
+      accept: "Accept",
+      decline: "Decline"
     }
   },
 
@@ -278,7 +285,7 @@ const translations = {
       s3Title: "3. Armazenamento e Segurança de Dados",
       s3Text: "Os seus dados são armazenados de forma segura e implementamos medidas técnicas e organizacionais adequadas para proteger as suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição. Retemos os seus dados apenas pelo tempo necessário para cumprir os propósitos descritos nesta política.",
       s4Title: "4. Cookies",
-      s4Text: "O nosso website utiliza cookies essenciais para armazenar as suas preferências de idioma e tema localmente no seu navegador. Não utilizamos cookies de rastreamento nem cookies de publicidade de terceiros. O único serviço externo carregado é o Google Fonts para tipografia.",
+      s4Text: "O nosso website utiliza cookies essenciais para armazenar as suas preferências de idioma e tema localmente no seu navegador. Com o seu consentimento, utilizamos o Google Analytics para recolher dados anónimos de utilização para melhorar o nosso website. O Google Fonts é carregado para tipografia. Não utilizamos cookies de publicidade de terceiros.",
       s5Title: "5. Os Seus Direitos",
       s5Text: "Ao abrigo do Regulamento Geral sobre a Proteção de Dados (RGPD) e da legislação portuguesa aplicável, tem o direito de aceder, retificar, eliminar ou restringir o processamento dos seus dados pessoais. Pode também retirar o consentimento a qualquer momento. Para exercer estes direitos, contacte-nos em info@meanify.eu.",
       s6Title: "6. Contacto",
@@ -301,6 +308,13 @@ const translations = {
       s5Text: "Estes termos serão regidos e interpretados de acordo com as leis de Portugal e da União Europeia. Quaisquer litígios estarão sujeitos à jurisdição exclusiva dos tribunais de Évora, Portugal.",
       s6Title: "6. Contacto",
       s6Text: "Para questões sobre estes termos, contacte-nos em info@meanify.eu ou ligue para +351 962 390 920. A nossa morada registada é ÉvoraTech, Évora, Portugal."
+    },
+
+    // Consentimento de Cookies
+    cookie: {
+      message: "Utilizamos cookies e análise para melhorar a sua experiência. Pode aceitar ou recusar cookies não essenciais.",
+      accept: "Aceitar",
+      decline: "Recusar"
     }
   }
 };
