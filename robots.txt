@@ -1,11 +1,18 @@
-# Meanify.eu Robots.txt
+# Meanify.eu robots.txt
 User-agent: *
 Allow: /
-Disallow: /design/
 
-# Sitemap
-Sitemap: https://www.meanify.eu/sitemap.xml
-
-# Crawl-delay (optional, for polite crawling)
-User-agent: AdsBot-Google
+# AI search and assistant crawlers are welcome (GEO).
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
 Allow: /
+
+Sitemap: https://www.meanify.eu/sitemap.xml

@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+
+
+<title>FAQ: AI Development, Forward Deployed Engineers &amp; Data | Meanify</title>
+<meta name="description" content="Answers about Forward Deployed Engineers, AI-written code, human in the loop, data security, the GDPR, the EU AI Act and working with Meanify.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://www.meanify.eu/en/faq/">
+
+<link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/faq/">
+
+<link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/perguntas-frequentes/">
+
+<link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/">
+<link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
+<link rel="alternate" type="application/atom+xml" title="Meanify · Insights" href="/en/insights/feed.xml">
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/logos/meanify-logo.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="/logos/favicon-48x48.png">
+<link rel="apple-touch-icon" href="/logos/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meanify">
+<meta property="og:url" content="https://www.meanify.eu/en/faq/">
+<meta property="og:title" content="FAQ: AI Development, Forward Deployed Engineers &amp; Data | Meanify">
+<meta property="og:description" content="Answers about Forward Deployed Engineers, AI-written code, human in the loop, data security, the GDPR, the EU AI Act and working with Meanify.">
+
+<meta property="og:image" content="https://www.meanify.eu/og/en/faq.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="FAQ: AI Development, Forward Deployed Engineers &amp; Data | Meanify">
+<meta property="og:locale" content="en_US">
+
+<meta property="og:locale:alternate" content="pt_PT">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FAQ: AI Development, Forward Deployed Engineers &amp; Data | Meanify">
+<meta name="twitter:description" content="Answers about Forward Deployed Engineers, AI-written code, human in the loop, data security, the GDPR, the EU AI Act and working with Meanify.">
+<meta name="twitter:image" content="https://www.meanify.eu/og/en/faq.png">
+<meta name="twitter:image:alt" content="FAQ: AI Development, Forward Deployed Engineers &amp; Data | Meanify">
+
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/styles.css">
+
+<script>
+  (function(){
+    try { var t = localStorage.getItem('meanify-theme'); if (t === 'light') { document.documentElement.setAttribute('data-theme','light'); } else if (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) { document.documentElement.setAttribute('data-theme','light'); } } catch(e){}
+  })();
+</script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var c = null;
+    try { c = localStorage.getItem('meanify-consent'); } catch (e) {}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: c === 'granted' ? 'granted' : 'denied'
+    });
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-RDQM9R4TNT', { page_language: 'en' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDQM9R4TNT"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.meanify.eu/#organization",
+      "name": "Meanify",
+      "url": "https://www.meanify.eu/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.meanify.eu/logos/meanify-logo.png"
+      },
+      "image": "https://www.meanify.eu/logos/meanify-logo.png",
+      "email": "info@meanify.eu",
+      "telephone": "+351-962-390-920",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ÉvoraTech",
+        "addressLocality": "Évora",
+        "addressRegion": "Alentejo",
+        "addressCountry": "PT"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Portugal"
+        },
+        {
+          "@type": "Place",
+          "name": "European Union"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+351-962-390-920",
+          "email": "info@meanify.eu",
+          "contactType": "sales",
+          "availableLanguage": [
+            "English",
+            "Portuguese"
+          ]
+        }
+      ],
+      "description": "Meanify is an AI engineering company based in Évora, Portugal. Our Forward Deployed Engineers use AI-accelerated development to build software, AI automation, multi-agent systems, data pipelines and governance, and small physical AI projects, with a human reviewing every step.",
+      "slogan": "Software and AI systems, built faster by engineers, validated by humans.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI-Accelerated Development",
+              "description": "Engineers who join your team and ship production software faster and at lower cost, using validated AI workflows with a human reviewing every step.",
+              "url": "https://www.meanify.eu/en/services/ai-accelerated-development/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Automation",
+              "description": "Automate repetitive workflows with AI, while people keep approving the decisions that matter.",
+              "url": "https://www.meanify.eu/en/services/ai-automation/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Multi-Agent Systems",
+              "description": "Coordinated AI agents that handle complex, multi-step work, with guardrails, monitoring and human approval points.",
+              "url": "https://www.meanify.eu/en/services/multi-agent-systems/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Data Pipelines & Governance",
+              "description": "Reliable data pipelines, data management and governance, ready for analytics, AI and the GDPR.",
+              "url": "https://www.meanify.eu/en/services/data-pipelines-governance/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Physical AI",
+              "description": "Small, practical AI projects that connect sensors, cameras and devices for local companies.",
+              "url": "https://www.meanify.eu/en/services/physical-ai/"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/meanify",
+        "https://www.facebook.com/meanify",
+        "https://wa.me/351962390920"
+      ],
+      "knowsAbout": [
+        "AI-accelerated software development",
+        "Forward Deployed Engineering",
+        "AI automation",
+        "Multi-agent systems",
+        "Data pipelines",
+        "Data management",
+        "Data governance",
+        "Physical AI"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.meanify.eu/#website",
+      "name": "Meanify",
+      "url": "https://www.meanify.eu/",
+      "publisher": {
+        "@id": "https://www.meanify.eu/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "pt-PT"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.meanify.eu/en/faq/#webpage",
+      "url": "https://www.meanify.eu/en/faq/",
+      "name": "FAQ: AI Development, Forward Deployed Engineers & Data | Meanify",
+      "description": "Answers about Forward Deployed Engineers, AI-written code, human in the loop, data security, the GDPR, the EU AI Act and working with Meanify.",
+      "isPartOf": {
+        "@id": "https://www.meanify.eu/#website"
+      },
+      "about": {
+        "@id": "https://www.meanify.eu/#organization"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-30",
+      "primaryImageOfPage": "https://www.meanify.eu/og/en/faq.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.meanify.eu/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "FAQ",
+          "item": "https://www.meanify.eu/en/faq/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.meanify.eu/en/faq/#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Meanify do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Meanify is an AI engineering company based in Évora, Portugal. Our Forward Deployed Engineers use AI-accelerated development to build software, AI automation, multi-agent systems, data pipelines and governance, and small physical AI projects, with a human reviewing every step."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is Meanify based?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At ÉvoraTech, in Évora, Portugal. We work with clients across Portugal and Europe, remotely and on site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages do you work in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "English and Portuguese."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with small companies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Many of our projects start small, such as one automation, one pilot or one engineer embedded in your team, and grow once they have proven their value."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Forward Deployed Engineer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Forward Deployed Engineer is a software engineer who works directly inside a client's team, close to the users and the problem, instead of building in isolation. At Meanify, our Forward Deployed Engineers also bring validated AI workflows that speed up delivery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does \"human in the loop\" mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means a person reviews and approves the work at defined points. At Meanify, an engineer reviews every AI-assisted change, automated tests check it, and you approve every delivery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is AI-written code safe to use in production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only when it is reviewed and tested. An engineer reviews every AI-assisted change, and it must pass automated tests before it is merged. AI speeds up the work; engineers stay responsible for the result."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much faster and cheaper is AI-accelerated development?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the project. AI shortens repetitive work such as boilerplate code, tests and documentation, so projects usually need fewer hours. We estimate each project after a short discovery."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is our data used to train AI models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. We use AI services and settings that do not train on client data, and we can use EU-hosted or on-premise models when required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you comply with the GDPR?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We follow the GDPR in our own work and design client systems with data protection built in: access control, data minimisation and retention rules."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you help with the EU AI Act?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We help you understand which EU AI Act obligations apply to your systems and build in the documentation, transparency and human oversight they require."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does a project start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With a conversation. Send us a message on WhatsApp, an email or call us. We then run a short discovery and send you a proposal with scope, timeline and price."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who owns the code and intellectual property?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do. Everything we build lives in your systems and is handed over with documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide support after delivery?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer support and maintenance after go-live, and we hand over documentation so your own team can maintain the system too."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you charge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the project: a fixed price for a well-defined scope, or a monthly engagement for Forward Deployed Engineers embedded in your team."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body data-lang="en">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  
+<header class="navbar" id="navbar">
+  <div class="navbar__container">
+    <a href="/en/" class="navbar__logo" aria-label="Meanify home">
+      <img src="/logos/meanify-logo.svg" alt="" width="40" height="38">
+      <span class="navbar__brand">Meanify</span>
+    </a>
+
+    <nav class="navbar__nav" id="navMenu" aria-label="Main navigation">
+      <ul class="navbar__links">
+        <li class="navbar__item navbar__item--has-menu">
+          <a href="/en/services/" class="navbar__link">Services 
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+
+</a>
+          <ul class="navbar__submenu">
+            
+            <li><a href="/en/services/ai-accelerated-development/" class="navbar__sublink">AI-Accelerated Development</a></li>
+            
+            <li><a href="/en/services/ai-automation/" class="navbar__sublink">AI Automation</a></li>
+            
+            <li><a href="/en/services/multi-agent-systems/" class="navbar__sublink">Multi-Agent Systems</a></li>
+            
+            <li><a href="/en/services/data-pipelines-governance/" class="navbar__sublink">Data Pipelines &amp; Governance</a></li>
+            
+            <li><a href="/en/services/physical-ai/" class="navbar__sublink">Physical AI</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="/en/how-we-work/" class="navbar__link">How we work</a></li>
+        
+        <li><a href="/en/insights/" class="navbar__link">Insights</a></li>
+        
+        <li><a href="/en/about/" class="navbar__link">About</a></li>
+        
+        <li><a href="/en/faq/" class="navbar__link" aria-current="page">FAQ</a></li>
+        
+        <li><a href="/en/contact/" class="navbar__link">Contact</a></li>
+        
+        <li><a href="https://wa.me/351962390920?text=Hi%20Meanify%2C%20I&#39;d%20like%20to%20talk%20about%20a%20project." class="navbar__link navbar__link--cta" target="_blank" rel="noopener noreferrer" data-lead="whatsapp" data-cta="header">Talk to an engineer</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar__actions">
+      <div class="lang-switcher" role="group" aria-label="Language">
+        
+        
+        <a href="/en/faq/" class="lang-btn lang-btn--active" hreflang="en" lang="en" data-lang="en" title="English" aria-current="true">EN</a>
+        
+        <span class="lang-divider" aria-hidden="true">|</span>
+        <a href="/pt/perguntas-frequentes/" class="lang-btn" hreflang="pt-PT" lang="pt-PT" data-lang="pt" title="Português">PT</a>
+        
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light/dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+
+      <button class="navbar__hamburger" id="hamburgerBtn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+  <main id="main">
+    
+
+
+<section class="page-hero">
+  <div class="container">
+    
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    
+    <li><a href="/en/">Home</a></li>
+    
+    <li><span aria-current="page">FAQ</span></li>
+    
+  </ol>
+</nav>
+
+
+    <p class="section-label">FAQ</p>
+    <h1 class="page-hero__title">Frequently asked questions</h1>
+    <p class="page-hero__lead">Straight answers about how Meanify works, AI-accelerated development, data security and working together. Can&#39;t find your question? Ask us directly.</p>
+    <p class="page-hero__updated">Last updated: <time datetime="2026-10-30">30 October 2026</time></p>
+  </div>
+  <div class="hero__gradient-bg" aria-hidden="true"></div>
+</section>
+
+
+<section class="section">
+  <div class="container container--narrow">
+    
+    <div class="faq-group">
+      <h2 class="faq-group__title">About Meanify</h2>
+      
+      
+<div class="faq">
+  
+  <details class="faq__item" id="what-does-meanify-do">
+    <summary class="faq__q"><h3>What does Meanify do?</h3></summary>
+    <p class="faq__a">Meanify is an AI engineering company based in Évora, Portugal. Our Forward Deployed Engineers use AI-accelerated development to build software, AI automation, multi-agent systems, data pipelines and governance, and small physical AI projects, with a human reviewing every step.</p>
+  </details>
+  
+  <details class="faq__item" id="location">
+    <summary class="faq__q"><h3>Where is Meanify based?</h3></summary>
+    <p class="faq__a">At ÉvoraTech, in Évora, Portugal. We work with clients across Portugal and Europe, remotely and on site.</p>
+  </details>
+  
+  <details class="faq__item" id="languages">
+    <summary class="faq__q"><h3>Which languages do you work in?</h3></summary>
+    <p class="faq__a">English and Portuguese.</p>
+  </details>
+  
+  <details class="faq__item" id="small-companies">
+    <summary class="faq__q"><h3>Do you work with small companies?</h3></summary>
+    <p class="faq__a">Yes. Many of our projects start small, such as one automation, one pilot or one engineer embedded in your team, and grow once they have proven their value.</p>
+  </details>
+  
+</div>
+
+    </div>
+    
+    <div class="faq-group">
+      <h2 class="faq-group__title">AI and quality</h2>
+      
+      
+<div class="faq">
+  
+  <details class="faq__item" id="fde">
+    <summary class="faq__q"><h3>What is a Forward Deployed Engineer?</h3></summary>
+    <p class="faq__a">A Forward Deployed Engineer is a software engineer who works directly inside a client&#39;s team, close to the users and the problem, instead of building in isolation. At Meanify, our Forward Deployed Engineers also bring validated AI workflows that speed up delivery.</p>
+  </details>
+  
+  <details class="faq__item" id="human-in-the-loop">
+    <summary class="faq__q"><h3>What does &quot;human in the loop&quot; mean?</h3></summary>
+    <p class="faq__a">It means a person reviews and approves the work at defined points. At Meanify, an engineer reviews every AI-assisted change, automated tests check it, and you approve every delivery.</p>
+  </details>
+  
+  <details class="faq__item" id="ai-code-safe">
+    <summary class="faq__q"><h3>Is AI-written code safe to use in production?</h3></summary>
+    <p class="faq__a">Only when it is reviewed and tested. An engineer reviews every AI-assisted change, and it must pass automated tests before it is merged. AI speeds up the work; engineers stay responsible for the result.</p>
+  </details>
+  
+  <details class="faq__item" id="faster-cheaper">
+    <summary class="faq__q"><h3>How much faster and cheaper is AI-accelerated development?</h3></summary>
+    <p class="faq__a">It depends on the project. AI shortens repetitive work such as boilerplate code, tests and documentation, so projects usually need fewer hours. We estimate each project after a short discovery.</p>
+  </details>
+  
+</div>
+
+    </div>
+    
+    <div class="faq-group">
+      <h2 class="faq-group__title">Data and security</h2>
+      
+      
+<div class="faq">
+  
+  <details class="faq__item" id="data-training">
+    <summary class="faq__q"><h3>Is our data used to train AI models?</h3></summary>
+    <p class="faq__a">No. We use AI services and settings that do not train on client data, and we can use EU-hosted or on-premise models when required.</p>
+  </details>
+  
+  <details class="faq__item" id="gdpr">
+    <summary class="faq__q"><h3>Do you comply with the GDPR?</h3></summary>
+    <p class="faq__a">Yes. We follow the GDPR in our own work and design client systems with data protection built in: access control, data minimisation and retention rules.</p>
+  </details>
+  
+  <details class="faq__item" id="ai-act">
+    <summary class="faq__q"><h3>Can you help with the EU AI Act?</h3></summary>
+    <p class="faq__a">Yes. We help you understand which EU AI Act obligations apply to your systems and build in the documentation, transparency and human oversight they require.</p>
+  </details>
+  
+</div>
+
+    </div>
+    
+    <div class="faq-group">
+      <h2 class="faq-group__title">Working together</h2>
+      
+      
+<div class="faq">
+  
+  <details class="faq__item" id="start">
+    <summary class="faq__q"><h3>How does a project start?</h3></summary>
+    <p class="faq__a">With a conversation. Send us a message on WhatsApp, an email or call us. We then run a short discovery and send you a proposal with scope, timeline and price.</p>
+  </details>
+  
+  <details class="faq__item" id="ownership">
+    <summary class="faq__q"><h3>Who owns the code and intellectual property?</h3></summary>
+    <p class="faq__a">You do. Everything we build lives in your systems and is handed over with documentation.</p>
+  </details>
+  
+  <details class="faq__item" id="support">
+    <summary class="faq__q"><h3>Do you provide support after delivery?</h3></summary>
+    <p class="faq__a">Yes. We offer support and maintenance after go-live, and we hand over documentation so your own team can maintain the system too.</p>
+  </details>
+  
+  <details class="faq__item" id="pricing">
+    <summary class="faq__q"><h3>How do you charge?</h3></summary>
+    <p class="faq__a">It depends on the project: a fixed price for a well-defined scope, or a monthly engagement for Forward Deployed Engineers embedded in your team.</p>
+  </details>
+  
+</div>
+
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="cta-band" aria-labelledby="ctaBandTitle">
+  <div class="container cta-band__inner">
+    <div>
+      <h2 class="cta-band__title" id="ctaBandTitle">Tell us what you want to build</h2>
+      <p class="cta-band__text">Talk directly to an engineer. No forms, no sales scripts.</p>
+    </div>
+    <div class="cta-band__actions">
+      <a href="https://wa.me/351962390920?text=Hi%20Meanify%2C%20I&#39;d%20like%20to%20talk%20about%20a%20project." class="btn btn--primary btn--icon" target="_blank" rel="noopener noreferrer" data-lead="whatsapp" data-cta="cta-band">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+ Message us on WhatsApp</a>
+      <a href="mailto:info@meanify.eu?subject=Project%20enquiry&amp;body=Hi%20Meanify%2C%0A%0ACompany%3A%0AWhat%20we%20want%20to%20build%3A%0ATimeline%3A%0A%0AThanks%2C" class="btn btn--secondary" data-lead="email" data-cta="cta-band">Send an email</a>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  
+<footer class="footer" id="footer">
+  <div class="footer__container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h2 class="footer__col-title">Services</h2>
+        <ul class="footer__list">
+          
+          <li><a href="/en/services/ai-accelerated-development/" class="footer__link">AI-Accelerated Development</a></li>
+          
+          <li><a href="/en/services/ai-automation/" class="footer__link">AI Automation</a></li>
+          
+          <li><a href="/en/services/multi-agent-systems/" class="footer__link">Multi-Agent Systems</a></li>
+          
+          <li><a href="/en/services/data-pipelines-governance/" class="footer__link">Data Pipelines &amp; Governance</a></li>
+          
+          <li><a href="/en/services/physical-ai/" class="footer__link">Physical AI</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__col-title">Company</h2>
+        <ul class="footer__list">
+          
+          <li><a href="/en/how-we-work/" class="footer__link">How we work</a></li>
+          
+          <li><a href="/en/insights/" class="footer__link">Insights</a></li>
+          
+          <li><a href="/en/about/" class="footer__link">About</a></li>
+          
+          <li><a href="/en/faq/" class="footer__link">FAQ</a></li>
+          
+          <li><a href="/en/contact/" class="footer__link">Contact</a></li>
+          
+          <li><a href="/en/ai-readiness-checklist/" class="footer__link">AI readiness checklist</a></li>
+          <li><a href="/en/privacy/" class="footer__link">Privacy Policy</a></li>
+          <li><a href="/en/terms/" class="footer__link">Terms of Service</a></li>
+          <li><a href="/en/cookies/" class="footer__link">Cookie Policy</a></li>
+          <li><button type="button" class="footer__link footer__link--button" data-consent-open>Cookie settings</button></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--wide">
+        <h2 class="footer__col-title">Contact</h2>
+        <address class="footer__contact">
+          <span>ÉvoraTech, Évora, Portugal</span>
+          <span class="footer__phone">
+            <a href="tel:+351962390920" data-lead="phone" data-cta="footer">+351 962 390 920</a>
+            <span>(Call to the national mobile network)</span>
+          </span>
+          <a href="mailto:info@meanify.eu?subject=Project%20enquiry&amp;body=Hi%20Meanify%2C%0A%0ACompany%3A%0AWhat%20we%20want%20to%20build%3A%0ATimeline%3A%0A%0AThanks%2C" data-lead="email" data-cta="footer">info@meanify.eu</a>
+        </address>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/company/meanify" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Meanify on LinkedIn">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+
+</a>
+          <a href="https://www.facebook.com/meanify" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Meanify on Facebook">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+
+</a>
+          <a href="https://wa.me/351962390920?text=Hi%20Meanify%2C%20I&#39;d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Contact Meanify on WhatsApp" data-lead="whatsapp" data-cta="footer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__livro">
+      <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer" class="footer__livro-link">
+        <img src="/logos/logotipo-livro-reclamacoes.png" alt="Electronic complaints book (Livro de Reclamações)" width="200" height="48" class="footer__livro-logo" loading="lazy" decoding="async">
+      </a>
+    </p>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 MEANIFY INC. ALL RIGHTS RESERVED</p>
+      <div class="footer__legal">
+        <a href="/en/privacy/">Privacy Policy</a>
+        <a href="/en/terms/">Terms of Service</a>
+        <a href="/en/cookies/">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <a href="https://wa.me/351962390920?text=Hi%20Meanify%2C%20I&#39;d%20like%20to%20talk%20about%20a%20project." class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat with Meanify on WhatsApp" data-lead="whatsapp" data-cta="fab">
+    
+<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+
+  </a>
+
+  <div class="consent" id="consentBanner" role="region" aria-labelledby="consentTitle" hidden>
+  <div class="consent__body">
+    <p class="consent__title" id="consentTitle">Cookies on meanify.eu</p>
+    <p class="consent__text">We&#39;d like to use Google Analytics cookies to understand how visitors use the site. They are only set if you accept. <a href="/en/cookies/">Cookie Policy</a></p>
+  </div>
+  <div class="consent__actions">
+    <button type="button" class="btn btn--secondary consent__btn" data-consent="denied">Reject</button>
+    <button type="button" class="btn btn--primary consent__btn" data-consent="granted">Accept</button>
+  </div>
+</div>
+
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

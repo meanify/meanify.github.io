@@ -1,0 +1,839 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+
+
+<title>Meanify | Desenvolvimento de Software com IA e Dados</title>
+<meta name="description" content="Engenheiros que desenvolvem software, automação com IA, sistemas multiagente e plataformas de dados mais rápido e a menor custo. Revisão humana. Évora.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://www.meanify.eu/pt/">
+
+<link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/">
+
+<link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/">
+
+<link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/">
+<link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt">
+<link rel="alternate" type="application/atom+xml" title="Meanify · Artigos" href="/pt/artigos/feed.xml">
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/logos/meanify-logo.svg">
+<link rel="icon" type="image/png" sizes="48x48" href="/logos/favicon-48x48.png">
+<link rel="apple-touch-icon" href="/logos/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Meanify">
+<meta property="og:url" content="https://www.meanify.eu/pt/">
+<meta property="og:title" content="Meanify | Desenvolvimento de Software com IA e Dados">
+<meta property="og:description" content="Engenheiros que desenvolvem software, automação com IA, sistemas multiagente e plataformas de dados mais rápido e a menor custo. Revisão humana. Évora.">
+
+<meta property="og:image" content="https://www.meanify.eu/og/pt/home.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Meanify | Desenvolvimento de Software com IA e Dados">
+<meta property="og:locale" content="pt_PT">
+
+<meta property="og:locale:alternate" content="en_US">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Meanify | Desenvolvimento de Software com IA e Dados">
+<meta name="twitter:description" content="Engenheiros que desenvolvem software, automação com IA, sistemas multiagente e plataformas de dados mais rápido e a menor custo. Revisão humana. Évora.">
+<meta name="twitter:image" content="https://www.meanify.eu/og/pt/home.png">
+<meta name="twitter:image:alt" content="Meanify | Desenvolvimento de Software com IA e Dados">
+
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/styles.css">
+
+<script>
+  (function(){
+    try { var t = localStorage.getItem('meanify-theme'); if (t === 'light') { document.documentElement.setAttribute('data-theme','light'); } else if (!t && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) { document.documentElement.setAttribute('data-theme','light'); } } catch(e){}
+  })();
+</script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function(){
+    var c = null;
+    try { c = localStorage.getItem('meanify-consent'); } catch (e) {}
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: c === 'granted' ? 'granted' : 'denied'
+    });
+  })();
+  gtag('js', new Date());
+  gtag('config', 'G-RDQM9R4TNT', { page_language: 'pt' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RDQM9R4TNT"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://www.meanify.eu/#organization",
+      "name": "Meanify",
+      "url": "https://www.meanify.eu/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.meanify.eu/logos/meanify-logo.png"
+      },
+      "image": "https://www.meanify.eu/logos/meanify-logo.png",
+      "email": "info@meanify.eu",
+      "telephone": "+351-962-390-920",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ÉvoraTech",
+        "addressLocality": "Évora",
+        "addressRegion": "Alentejo",
+        "addressCountry": "PT"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "Portugal"
+        },
+        {
+          "@type": "Place",
+          "name": "European Union"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+351-962-390-920",
+          "email": "info@meanify.eu",
+          "contactType": "sales",
+          "availableLanguage": [
+            "English",
+            "Portuguese"
+          ]
+        }
+      ],
+      "description": "A Meanify é uma empresa de engenharia de IA sediada em Évora. Os nossos Forward Deployed Engineers usam desenvolvimento acelerado com IA para criar software, automação com IA, sistemas multiagente, pipelines e governança de dados, e pequenos projetos de IA física, com uma pessoa a rever cada passo.",
+      "slogan": "Software e sistemas de IA, feitos mais rápido por engenheiros, validados por pessoas.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Desenvolvimento Acelerado com IA",
+              "description": "Engenheiros que se juntam à sua equipa e entregam software em produção mais rápido e a menor custo, com processos de IA validados e revisão humana em cada passo.",
+              "url": "https://www.meanify.eu/pt/servicos/desenvolvimento-acelerado-com-ia/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Automação com IA",
+              "description": "Automatize processos repetitivos com IA, mantendo as pessoas a aprovar as decisões importantes.",
+              "url": "https://www.meanify.eu/pt/servicos/automacao-com-ia/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sistemas Multiagente",
+              "description": "Agentes de IA coordenados que tratam trabalho complexo, em vários passos, com regras de controlo, monitorização e aprovação humana.",
+              "url": "https://www.meanify.eu/pt/servicos/sistemas-multiagente/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pipelines e Governança de Dados",
+              "description": "Pipelines de dados fiáveis, gestão e governança de dados, preparados para análise, IA e RGPD.",
+              "url": "https://www.meanify.eu/pt/servicos/pipelines-e-governanca-de-dados/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "IA Física",
+              "description": "Projetos de IA pequenos e práticos que ligam sensores, câmaras e dispositivos, para empresas locais.",
+              "url": "https://www.meanify.eu/pt/servicos/ia-fisica/"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/meanify",
+        "https://www.facebook.com/meanify",
+        "https://wa.me/351962390920"
+      ],
+      "knowsAbout": [
+        "AI-accelerated software development",
+        "Forward Deployed Engineering",
+        "AI automation",
+        "Multi-agent systems",
+        "Data pipelines",
+        "Data management",
+        "Data governance",
+        "Physical AI"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.meanify.eu/#website",
+      "name": "Meanify",
+      "url": "https://www.meanify.eu/",
+      "publisher": {
+        "@id": "https://www.meanify.eu/#organization"
+      },
+      "inLanguage": [
+        "en",
+        "pt-PT"
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.meanify.eu/pt/#webpage",
+      "url": "https://www.meanify.eu/pt/",
+      "name": "Meanify | Desenvolvimento de Software com IA e Dados",
+      "description": "Engenheiros que desenvolvem software, automação com IA, sistemas multiagente e plataformas de dados mais rápido e a menor custo. Revisão humana. Évora.",
+      "isPartOf": {
+        "@id": "https://www.meanify.eu/#website"
+      },
+      "about": {
+        "@id": "https://www.meanify.eu/#organization"
+      },
+      "inLanguage": "pt-PT",
+      "dateModified": "2026-10-30",
+      "primaryImageOfPage": "https://www.meanify.eu/og/pt/home.png"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.meanify.eu/pt/#faq",
+      "inLanguage": "pt-PT",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que faz a Meanify?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Meanify é uma empresa de engenharia de IA sediada em Évora. Os nossos Forward Deployed Engineers usam desenvolvimento acelerado com IA para criar software, automação com IA, sistemas multiagente, pipelines e governança de dados, e pequenos projetos de IA física, com uma pessoa a rever cada passo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que é um Forward Deployed Engineer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Um Forward Deployed Engineer é um engenheiro de software que trabalha diretamente dentro da equipa do cliente, perto dos utilizadores e do problema, em vez de desenvolver isolado. Na Meanify, os nossos Forward Deployed Engineers trazem também processos de IA validados que aceleram as entregas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O que significa ter uma pessoa sempre envolvida (\"human in the loop\")?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Significa que uma pessoa revê e aprova o trabalho em pontos definidos. Na Meanify, um engenheiro revê cada alteração feita com IA, os testes automáticos verificam-na, e o cliente aprova cada entrega."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Os nossos dados são usados para treinar modelos de IA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Usamos serviços e configurações de IA que não treinam modelos com dados de clientes, e podemos usar modelos alojados na UE ou nas suas instalações quando necessário."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body data-lang="pt">
+  <a class="skip-link" href="#main">Saltar para o conteúdo</a>
+
+  
+<header class="navbar" id="navbar">
+  <div class="navbar__container">
+    <a href="/pt/" class="navbar__logo" aria-label="Página inicial da Meanify">
+      <img src="/logos/meanify-logo.svg" alt="" width="40" height="38">
+      <span class="navbar__brand">Meanify</span>
+    </a>
+
+    <nav class="navbar__nav" id="navMenu" aria-label="Navegação principal">
+      <ul class="navbar__links">
+        <li class="navbar__item navbar__item--has-menu">
+          <a href="/pt/servicos/" class="navbar__link">Serviços 
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+
+</a>
+          <ul class="navbar__submenu">
+            
+            <li><a href="/pt/servicos/desenvolvimento-acelerado-com-ia/" class="navbar__sublink">Desenvolvimento Acelerado com IA</a></li>
+            
+            <li><a href="/pt/servicos/automacao-com-ia/" class="navbar__sublink">Automação com IA</a></li>
+            
+            <li><a href="/pt/servicos/sistemas-multiagente/" class="navbar__sublink">Sistemas Multiagente</a></li>
+            
+            <li><a href="/pt/servicos/pipelines-e-governanca-de-dados/" class="navbar__sublink">Pipelines e Governança de Dados</a></li>
+            
+            <li><a href="/pt/servicos/ia-fisica/" class="navbar__sublink">IA Física</a></li>
+            
+          </ul>
+        </li>
+        
+        <li><a href="/pt/como-trabalhamos/" class="navbar__link">Como trabalhamos</a></li>
+        
+        <li><a href="/pt/artigos/" class="navbar__link">Artigos</a></li>
+        
+        <li><a href="/pt/sobre/" class="navbar__link">Sobre nós</a></li>
+        
+        <li><a href="/pt/perguntas-frequentes/" class="navbar__link">FAQ</a></li>
+        
+        <li><a href="/pt/contacto/" class="navbar__link">Contacto</a></li>
+        
+        <li><a href="https://wa.me/351962390920?text=Ol%C3%A1%20Meanify%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." class="navbar__link navbar__link--cta" target="_blank" rel="noopener noreferrer" data-lead="whatsapp" data-cta="header">Fale com um engenheiro</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar__actions">
+      <div class="lang-switcher" role="group" aria-label="Idioma">
+        
+        
+        <a href="/en/" class="lang-btn" hreflang="en" lang="en" data-lang="en" title="English">EN</a>
+        
+        <span class="lang-divider" aria-hidden="true">|</span>
+        <a href="/pt/" class="lang-btn lang-btn--active" hreflang="pt-PT" lang="pt-PT" data-lang="pt" title="Português" aria-current="true">PT</a>
+        
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema claro/escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+
+      <button class="navbar__hamburger" id="hamburgerBtn" type="button" aria-label="Abrir/fechar menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+
+  <main id="main">
+    
+
+
+
+<section class="hero" id="hero">
+  <div class="hero__container">
+    <div class="hero__label animate-on-scroll">
+      <span class="hero__label-line" aria-hidden="true"></span>
+      <span>Forward Deployed Engineers · Acelerado com IA</span>
+    </div>
+    <h1 class="hero__title animate-on-scroll">Software e sistemas de IA, feitos mais rápido por engenheiros, validados por pessoas.</h1>
+    <p class="hero__subheadline animate-on-scroll">Os Forward Deployed Engineers da Meanify juntam-se à sua equipa e usam processos de IA comprovados para entregar software, automação e sistemas de dados mais rápido e a menor custo. Uma pessoa revê cada passo.</p>
+    <div class="hero__ctas animate-on-scroll">
+      <a href="https://wa.me/351962390920?text=Ol%C3%A1%20Meanify%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." class="btn btn--primary btn--icon" target="_blank" rel="noopener noreferrer" data-lead="whatsapp" data-cta="hero">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+ Fale com um engenheiro</a>
+      <a href="/pt/como-trabalhamos/" class="btn btn--secondary" data-cta="hero">Veja como trabalhamos</a>
+    </div>
+    <ul class="trust animate-on-scroll">
+      <li>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+
+ Sediados no ÉvoraTech, Évora</li><li>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+
+ Português e inglês</li><li>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+
+ Revisão humana em cada passo</li><li>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+
+ RGPD e Regulamento da IA</li>
+    </ul>
+  </div>
+  <div class="hero__gradient-bg" aria-hidden="true"></div>
+</section>
+
+<section class="section section--alt" id="why" aria-labelledby="problemTitle">
+  <div class="container">
+    <header class="section__header animate-on-scroll">
+      <p class="section-label">Porquê a Meanify</p>
+      <h2 class="section__title" id="problemTitle">A rapidez da IA, com critério humano</h2>
+    </header>
+    <ul class="grid grid--3">
+      
+      <li class="card animate-on-scroll">
+        <h3 class="card__title">O desenvolvimento tradicional é lento</h3>
+        <p class="card__text">O software à medida demora muitas vezes meses, exige uma equipa grande e ultrapassa o orçamento antes de chegar aos utilizadores.</p>
+      </li>
+      
+      <li class="card animate-on-scroll">
+        <h3 class="card__title">IA sem supervisão é um risco</h3>
+        <p class="card__text">As ferramentas de IA escrevem código e tomam decisões depressa, mas sem revisão introduzem erros, falhas de segurança e perda de controlo.</p>
+      </li>
+      
+      <li class="card animate-on-scroll card--accent">
+        <h3 class="card__title">A nossa resposta: as duas coisas</h3>
+        <p class="card__text">Usamos processos de IA validados para avançar depressa, e os engenheiros revêem e testam cada alteração. O cliente aprova cada entrega.</p>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="services" aria-labelledby="servicesTitle">
+  <div class="container">
+    <header class="section__header animate-on-scroll">
+      <p class="section-label">Serviços</p>
+      <h2 class="section__title" id="servicesTitle">O que construímos</h2>
+      <p class="section__intro">Cinco serviços, um processo validado. Comece pelo que resolve o seu problema mais urgente.</p>
+    </header>
+    <ul class="svc-grid">
+      
+      
+<li class="svc-card svc-card--featured">
+  <a href="/pt/servicos/desenvolvimento-acelerado-com-ia/" class="svc-card__link">
+    <span class="svc-card__top">
+      <span class="svc-card__icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+
+</span>
+      <span class="svc-card__badge">Principal</span>
+    </span>
+    <span class="svc-card__tagline">Forward Deployed Engineers</span>
+    <h3 class="svc-card__title">Desenvolvimento Acelerado com IA</h3>
+    <p class="svc-card__text">Engenheiros que se juntam à sua equipa e entregam software em produção mais rápido e a menor custo, com processos de IA validados e revisão humana em cada passo.</p>
+    <span class="svc-card__more">Saber mais →</span>
+  </a>
+</li>
+
+      
+      
+<li class="svc-card">
+  <a href="/pt/servicos/automacao-com-ia/" class="svc-card__link">
+    <span class="svc-card__top">
+      <span class="svc-card__icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12h.01"/><path d="M17 12h.01"/><path d="M7 12h.01"/><path d="M2 10h20"/><path d="M2 14h20"/></svg>
+
+</span>
+      
+    </span>
+    <span class="svc-card__tagline">Menos trabalho manual</span>
+    <h3 class="svc-card__title">Automação com IA</h3>
+    <p class="svc-card__text">Automatize processos repetitivos com IA, mantendo as pessoas a aprovar as decisões importantes.</p>
+    <span class="svc-card__more">Saber mais →</span>
+  </a>
+</li>
+
+      
+      
+<li class="svc-card">
+  <a href="/pt/servicos/sistemas-multiagente/" class="svc-card__link">
+    <span class="svc-card__top">
+      <span class="svc-card__icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.4V11h3a3 3 0 0 1 3 3v1.5a2.5 2.5 0 0 1 0 5V21a1 1 0 0 1-1 1h-3.5a1 1 0 0 1-1-1v-2H9.5v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-.5a2.5 2.5 0 0 1 0-5V14a3 3 0 0 1 3-3h3V9.4A4 4 0 0 1 12 2z"/><circle cx="9" cy="15.5" r="1"/><circle cx="15" cy="15.5" r="1"/></svg>
+
+</span>
+      
+    </span>
+    <span class="svc-card__tagline">Agentes de IA que trabalham em conjunto</span>
+    <h3 class="svc-card__title">Sistemas Multiagente</h3>
+    <p class="svc-card__text">Agentes de IA coordenados que tratam trabalho complexo, em vários passos, com regras de controlo, monitorização e aprovação humana.</p>
+    <span class="svc-card__more">Saber mais →</span>
+  </a>
+</li>
+
+      
+      
+<li class="svc-card">
+  <a href="/pt/servicos/pipelines-e-governanca-de-dados/" class="svc-card__link">
+    <span class="svc-card__top">
+      <span class="svc-card__icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v7c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/><path d="M3 12v7c0 1.66 4.03 3 9 3s9-1.34 9-3v-7"/></svg>
+
+</span>
+      
+    </span>
+    <span class="svc-card__tagline">Dados em que pode confiar</span>
+    <h3 class="svc-card__title">Pipelines e Governança de Dados</h3>
+    <p class="svc-card__text">Pipelines de dados fiáveis, gestão e governança de dados, preparados para análise, IA e RGPD.</p>
+    <span class="svc-card__more">Saber mais →</span>
+  </a>
+</li>
+
+      
+      
+<li class="svc-card">
+  <a href="/pt/servicos/ia-fisica/" class="svc-card__link">
+    <span class="svc-card__top">
+      <span class="svc-card__icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+
+</span>
+      
+    </span>
+    <span class="svc-card__tagline">Para empresas locais</span>
+    <h3 class="svc-card__title">IA Física</h3>
+    <p class="svc-card__text">Projetos de IA pequenos e práticos que ligam sensores, câmaras e dispositivos, para empresas locais.</p>
+    <span class="svc-card__more">Saber mais →</span>
+  </a>
+</li>
+
+      
+    </ul>
+  </div>
+</section>
+
+<section class="section section--alt" id="process" aria-labelledby="processTitle">
+  <div class="container">
+    <header class="section__header animate-on-scroll">
+      <p class="section-label">Como trabalhamos</p>
+      <h2 class="section__title" id="processTitle">Um processo validado, com uma pessoa sempre envolvida</h2>
+      <p class="section__intro">Os mesmos cinco passos em todos os projetos. A IA acelera o trabalho; as pessoas tomam as decisões.</p>
+    </header>
+    
+    
+    
+
+<ol class="steps">
+  
+  <li class="step">
+    <span class="step__num" aria-hidden="true">1</span>
+    <h3 class="step__title">Descobrir</h3>
+    <p class="step__text">Conhecemos o seu processo, objetivos e restrições, e acordamos o que é um bom resultado.</p>
+    <p class="step__human">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+
+ <span><span class="visually-hidden">Validação humana: </span>Aprova o âmbito e os critérios de sucesso.</span></p>
+  </li>
+  
+  <li class="step">
+    <span class="step__num" aria-hidden="true">2</span>
+    <h3 class="step__title">Planear</h3>
+    <p class="step__text">Definimos a arquitetura, os ciclos de trabalho e os pontos de revisão.</p>
+    <p class="step__human">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+
+ <span><span class="visually-hidden">Validação humana: </span>Aprova o plano.</span></p>
+  </li>
+  
+  <li class="step">
+    <span class="step__num" aria-hidden="true">3</span>
+    <h3 class="step__title">Construir com IA</h3>
+    <p class="step__text">Os engenheiros usam processos de IA validados para preparar código, testes, automações e documentação.</p>
+    <p class="step__human">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+
+ <span><span class="visually-hidden">Validação humana: </span>Os engenheiros desenham e orientam o trabalho.</span></p>
+  </li>
+  
+  <li class="step">
+    <span class="step__num" aria-hidden="true">4</span>
+    <h3 class="step__title">Validar</h3>
+    <p class="step__text">Cada alteração é revista por um engenheiro e verificada por testes automáticos antes de ser integrada.</p>
+    <p class="step__human">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+
+ <span><span class="visually-hidden">Validação humana: </span>Nada avança sem revisão.</span></p>
+  </li>
+  
+  <li class="step">
+    <span class="step__num" aria-hidden="true">5</span>
+    <h3 class="step__title">Entregar e apoiar</h3>
+    <p class="step__text">Demonstramos, pomos em produção e passamos tudo com documentação, e damos apoio depois da entrada em funcionamento.</p>
+    <p class="step__human">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+
+ <span><span class="visually-hidden">Validação humana: </span>Aceita cada entrega.</span></p>
+  </li>
+  
+</ol>
+
+    <p class="section__more"><a href="/pt/como-trabalhamos/" class="btn btn--secondary">Ver o processo completo</a></p>
+  </div>
+</section>
+
+<section class="section" id="benefits" aria-labelledby="whyTitle">
+  <div class="container">
+    <header class="section__header animate-on-scroll">
+      <p class="section-label">O que ganha</p>
+      <h2 class="section__title" id="whyTitle">Mais rápido. Mais acessível. Fiável.</h2>
+    </header>
+    <ul class="grid grid--3">
+      
+      <li class="card animate-on-scroll">
+        <span class="card__num" aria-hidden="true">01</span>
+        <h3 class="card__title">Entregas mais rápidas</h3>
+        <p class="card__text">A IA trata do trabalho repetitivo, como código base, testes e documentação, e os engenheiros focam-se no desenho da solução e nos problemas difíceis.</p>
+      </li>
+      
+      <li class="card animate-on-scroll">
+        <span class="card__num" aria-hidden="true">02</span>
+        <h3 class="card__title">Menor custo</h3>
+        <p class="card__text">São precisas menos horas para atingir a mesma qualidade, e só paga engenheiros dedicados ao seu projeto quando precisa deles.</p>
+      </li>
+      
+      <li class="card animate-on-scroll">
+        <span class="card__num" aria-hidden="true">03</span>
+        <h3 class="card__title">Resultados fiáveis</h3>
+        <p class="card__text">Cada alteração feita com IA é revista por um engenheiro e verificada por testes automáticos antes de avançar. Nada entra em produção sem a sua aprovação.</p>
+      </li>
+      
+    </ul>
+  </div>
+</section>
+
+
+<section class="teaser" aria-labelledby="teaserTitle">
+  <div class="container teaser__inner">
+    <span class="teaser__icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+
+</span>
+    <div class="teaser__text">
+      <h2 class="teaser__title" id="teaserTitle">A sua empresa está pronta para a IA?</h2>
+      <p>Faça a nossa checklist gratuita de 17 pontos. Cinco minutos, sem registo.</p>
+    </div>
+    <a href="/pt/checklist-preparacao-ia/" class="btn btn--primary" data-cta="checklist-teaser">Fazer a checklist →</a>
+  </div>
+</section>
+
+
+<section class="section section--alt" id="faq" aria-labelledby="faqTitle">
+  <div class="container container--narrow">
+    <header class="section__header animate-on-scroll">
+      <p class="section-label">Perguntas frequentes</p>
+      <h2 class="section__title" id="faqTitle">Perguntas comuns</h2>
+    </header>
+    
+    
+<div class="faq">
+  
+  <details class="faq__item" id="what-does-meanify-do">
+    <summary class="faq__q"><h3>O que faz a Meanify?</h3></summary>
+    <p class="faq__a">A Meanify é uma empresa de engenharia de IA sediada em Évora. Os nossos Forward Deployed Engineers usam desenvolvimento acelerado com IA para criar software, automação com IA, sistemas multiagente, pipelines e governança de dados, e pequenos projetos de IA física, com uma pessoa a rever cada passo.</p>
+  </details>
+  
+  <details class="faq__item" id="fde">
+    <summary class="faq__q"><h3>O que é um Forward Deployed Engineer?</h3></summary>
+    <p class="faq__a">Um Forward Deployed Engineer é um engenheiro de software que trabalha diretamente dentro da equipa do cliente, perto dos utilizadores e do problema, em vez de desenvolver isolado. Na Meanify, os nossos Forward Deployed Engineers trazem também processos de IA validados que aceleram as entregas.</p>
+  </details>
+  
+  <details class="faq__item" id="human-in-the-loop">
+    <summary class="faq__q"><h3>O que significa ter uma pessoa sempre envolvida (&quot;human in the loop&quot;)?</h3></summary>
+    <p class="faq__a">Significa que uma pessoa revê e aprova o trabalho em pontos definidos. Na Meanify, um engenheiro revê cada alteração feita com IA, os testes automáticos verificam-na, e o cliente aprova cada entrega.</p>
+  </details>
+  
+  <details class="faq__item" id="data-training">
+    <summary class="faq__q"><h3>Os nossos dados são usados para treinar modelos de IA?</h3></summary>
+    <p class="faq__a">Não. Usamos serviços e configurações de IA que não treinam modelos com dados de clientes, e podemos usar modelos alojados na UE ou nas suas instalações quando necessário.</p>
+  </details>
+  
+</div>
+
+    <p class="section__more"><a href="/pt/perguntas-frequentes/" class="btn btn--secondary">Todas as perguntas</a></p>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contactTitle">
+  <div class="contact__container">
+    <div class="contact__info animate-on-scroll">
+      <p class="section-label">Contacto</p>
+      <h2 class="contact__title" id="contactTitle">Diga-nos o que quer construir</h2>
+      <p class="contact__subtitle">Sem formulários. Envie-nos uma mensagem no WhatsApp, um email ou ligue-nos, e fala com um engenheiro, não com um guião de vendas.</p>
+      <p class="contact__address">
+        
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+
+
+        <span><strong>Escritório:</strong> ÉvoraTech, Évora, Portugal</span>
+      </p>
+    </div>
+    
+    <div class="animate-on-scroll">
+
+<ul class="contact__channels">
+  <li>
+    <a href="https://wa.me/351962390920?text=Ol%C3%A1%20Meanify%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." class="channel channel--primary" target="_blank" rel="noopener noreferrer" data-lead="whatsapp" data-cta="contact">
+      <span class="channel__icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+</span>
+      <span class="channel__text">
+        <span class="channel__title">WhatsApp</span>
+        <span class="channel__desc">A forma mais rápida de nos contactar.</span>
+        <span class="channel__value">+351 962 390 920</span>
+      </span>
+      <span class="channel__cta">Iniciar conversa →</span>
+    </a>
+  </li>
+  <li>
+    <a href="mailto:info@meanify.eu?subject=Pedido%20de%20informa%C3%A7%C3%A3o%20sobre%20projeto&amp;body=Ol%C3%A1%20Meanify%2C%0A%0AEmpresa%3A%0AO%20que%20queremos%20construir%3A%0APrazo%3A%0A%0AObrigado%2C" class="channel" data-lead="email" data-cta="contact">
+      <span class="channel__icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg>
+
+</span>
+      <span class="channel__text">
+        <span class="channel__title">Email</span>
+        <span class="channel__desc">Envie uma breve descrição e entraremos em contacto.</span>
+        <span class="channel__value">info@meanify.eu</span>
+      </span>
+      <span class="channel__cta">Escreva-nos →</span>
+    </a>
+  </li>
+  <li>
+    <a href="tel:+351962390920" class="channel" data-lead="phone" data-cta="contact">
+      <span class="channel__icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+
+</span>
+      <span class="channel__text">
+        <span class="channel__title">Telefone</span>
+        <span class="channel__desc">Prefere falar? Ligue-nos.</span>
+        <span class="channel__value">+351 962 390 920 <small>(Chamada para a rede móvel nacional)</small></span>
+      </span>
+      <span class="channel__cta">Ligue-nos →</span>
+    </a>
+  </li>
+</ul>
+</div>
+  </div>
+</section>
+
+  </main>
+
+  
+<footer class="footer" id="footer">
+  <div class="footer__container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h2 class="footer__col-title">Serviços</h2>
+        <ul class="footer__list">
+          
+          <li><a href="/pt/servicos/desenvolvimento-acelerado-com-ia/" class="footer__link">Desenvolvimento Acelerado com IA</a></li>
+          
+          <li><a href="/pt/servicos/automacao-com-ia/" class="footer__link">Automação com IA</a></li>
+          
+          <li><a href="/pt/servicos/sistemas-multiagente/" class="footer__link">Sistemas Multiagente</a></li>
+          
+          <li><a href="/pt/servicos/pipelines-e-governanca-de-dados/" class="footer__link">Pipelines e Governança de Dados</a></li>
+          
+          <li><a href="/pt/servicos/ia-fisica/" class="footer__link">IA Física</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__col-title">Empresa</h2>
+        <ul class="footer__list">
+          
+          <li><a href="/pt/como-trabalhamos/" class="footer__link">Como trabalhamos</a></li>
+          
+          <li><a href="/pt/artigos/" class="footer__link">Artigos</a></li>
+          
+          <li><a href="/pt/sobre/" class="footer__link">Sobre nós</a></li>
+          
+          <li><a href="/pt/perguntas-frequentes/" class="footer__link">Perguntas frequentes</a></li>
+          
+          <li><a href="/pt/contacto/" class="footer__link">Contacto</a></li>
+          
+          <li><a href="/pt/checklist-preparacao-ia/" class="footer__link">Checklist de preparação para IA</a></li>
+          <li><a href="/pt/privacidade/" class="footer__link">Política de Privacidade</a></li>
+          <li><a href="/pt/termos/" class="footer__link">Termos de Serviço</a></li>
+          <li><a href="/pt/cookies/" class="footer__link">Política de Cookies</a></li>
+          <li><button type="button" class="footer__link footer__link--button" data-consent-open>Definições de cookies</button></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--wide">
+        <h2 class="footer__col-title">Contacto</h2>
+        <address class="footer__contact">
+          <span>ÉvoraTech, Évora, Portugal</span>
+          <span class="footer__phone">
+            <a href="tel:+351962390920" data-lead="phone" data-cta="footer">+351 962 390 920</a>
+            <span>(Chamada para a rede móvel nacional)</span>
+          </span>
+          <a href="mailto:info@meanify.eu?subject=Pedido%20de%20informa%C3%A7%C3%A3o%20sobre%20projeto&amp;body=Ol%C3%A1%20Meanify%2C%0A%0AEmpresa%3A%0AO%20que%20queremos%20construir%3A%0APrazo%3A%0A%0AObrigado%2C" data-lead="email" data-cta="footer">info@meanify.eu</a>
+        </address>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/company/meanify" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Meanify no LinkedIn">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+
+</a>
+          <a href="https://www.facebook.com/meanify" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Meanify no Facebook">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+
+</a>
+          <a href="https://wa.me/351962390920?text=Ol%C3%A1%20Meanify%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Contacte a Meanify no WhatsApp" data-lead="whatsapp" data-cta="footer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+</a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer__livro">
+      <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener noreferrer" class="footer__livro-link">
+        <img src="/logos/logotipo-livro-reclamacoes.png" alt="Livro de reclamações eletrónico" width="200" height="48" class="footer__livro-logo" loading="lazy" decoding="async">
+      </a>
+    </p>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 MEANIFY INC. TODOS OS DIREITOS RESERVADOS</p>
+      <div class="footer__legal">
+        <a href="/pt/privacidade/">Política de Privacidade</a>
+        <a href="/pt/termos/">Termos de Serviço</a>
+        <a href="/pt/cookies/">Política de Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <a href="https://wa.me/351962390920?text=Ol%C3%A1%20Meanify%2C%20gostaria%20de%20falar%20sobre%20um%20projeto." class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Fale com a Meanify no WhatsApp" data-lead="whatsapp" data-cta="fab">
+    
+<svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+
+
+  </a>
+
+  <div class="consent" id="consentBanner" role="region" aria-labelledby="consentTitle" hidden>
+  <div class="consent__body">
+    <p class="consent__title" id="consentTitle">Cookies em meanify.eu</p>
+    <p class="consent__text">Gostaríamos de usar cookies do Google Analytics para perceber como os visitantes utilizam o site. Só são definidos se aceitar. <a href="/pt/cookies/">Política de Cookies</a></p>
+  </div>
+  <div class="consent__actions">
+    <button type="button" class="btn btn--secondary consent__btn" data-consent="denied">Rejeitar</button>
+    <button type="button" class="btn btn--primary consent__btn" data-consent="granted">Aceitar</button>
+  </div>
+</div>
+
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

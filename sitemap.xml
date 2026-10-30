@@ -2,12 +2,251 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.meanify.eu/</loc>
-    <lastmod>2026-02-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.meanify.eu/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/" />
+    <loc>https://www.meanify.eu/en/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/services/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/servicos/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/services/ai-accelerated-development/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/ai-accelerated-development/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/desenvolvimento-acelerado-com-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/servicos/desenvolvimento-acelerado-com-ia/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/ai-accelerated-development/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/desenvolvimento-acelerado-com-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/services/ai-automation/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/ai-automation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/automacao-com-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/servicos/automacao-com-ia/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/ai-automation/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/automacao-com-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/services/multi-agent-systems/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/multi-agent-systems/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/sistemas-multiagente/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/servicos/sistemas-multiagente/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/multi-agent-systems/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/sistemas-multiagente/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/services/data-pipelines-governance/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/data-pipelines-governance/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/pipelines-e-governanca-de-dados/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/servicos/pipelines-e-governanca-de-dados/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/data-pipelines-governance/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/pipelines-e-governanca-de-dados/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/services/physical-ai/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/physical-ai/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/ia-fisica/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/servicos/ia-fisica/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/services/physical-ai/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/servicos/ia-fisica/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/how-we-work/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/how-we-work/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/como-trabalhamos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/como-trabalhamos/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/how-we-work/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/como-trabalhamos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/about/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/sobre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/sobre/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/sobre/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/faq/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/perguntas-frequentes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/perguntas-frequentes/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/faq/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/perguntas-frequentes/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/contact/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/contacto/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/insights/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/artigos/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/insights/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/artigos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/ai-readiness-checklist/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/ai-readiness-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/checklist-preparacao-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/checklist-preparacao-ia/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/ai-readiness-checklist/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/checklist-preparacao-ia/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/privacy/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/privacidade/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/privacidade/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/terms/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/termos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/termos/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/termos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/cookies/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/cookies/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.meanify.eu/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/insights/human-in-the-loop-ai-development/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/insights/human-in-the-loop-ai-development/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/artigos/desenvolvimento-com-ia-com-revisao-humana/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/en/insights/what-is-a-forward-deployed-engineer/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/insights/what-is-a-forward-deployed-engineer/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/artigos/o-que-e-um-forward-deployed-engineer/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/artigos/desenvolvimento-com-ia-com-revisao-humana/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/insights/human-in-the-loop-ai-development/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/artigos/desenvolvimento-com-ia-com-revisao-humana/"/>
+  </url>
+  <url>
+    <loc>https://www.meanify.eu/pt/artigos/o-que-e-um-forward-deployed-engineer/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.meanify.eu/en/insights/what-is-a-forward-deployed-engineer/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://www.meanify.eu/pt/artigos/o-que-e-um-forward-deployed-engineer/"/>
   </url>
 </urlset>

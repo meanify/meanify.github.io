@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Meanify · Insights</title>
+  <subtitle>Short, practical articles on AI-accelerated development, Forward Deployed Engineers, automation and data, written by the Meanify team.</subtitle>
+  <link href="https://www.meanify.eu/en/insights/feed.xml" rel="self"/>
+  <link href="https://www.meanify.eu/en/insights/"/>
+  <id>https://www.meanify.eu/en/insights/feed.xml</id>
+  <author><name>Meanify</name><email>info@meanify.eu</email></author>
+  <updated>2026-10-30T00:00:00Z</updated>
+  <entry>
+    <title>Human-in-the-loop AI development: how we validate AI-written code</title>
+    <link href="https://www.meanify.eu/en/insights/human-in-the-loop-ai-development/"/>
+    <id>https://www.meanify.eu/en/insights/human-in-the-loop-ai-development/</id>
+    <published>2026-10-30T00:00:00Z</published>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <summary>AI can write code in minutes, but speed without review is a risk. How a human-in-the-loop process keeps AI-assisted software fast, affordable and reliable.</summary>
+  </entry>
+  <entry>
+    <title>What is a Forward Deployed Engineer?</title>
+    <link href="https://www.meanify.eu/en/insights/what-is-a-forward-deployed-engineer/"/>
+    <id>https://www.meanify.eu/en/insights/what-is-a-forward-deployed-engineer/</id>
+    <published>2026-10-30T00:00:00Z</published>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <summary>A Forward Deployed Engineer works inside the client&#39;s team, close to the users and the problem. What the role is, how it differs from consultants and contractors, and why it suits AI projects.</summary>
+  </entry>
+</feed>

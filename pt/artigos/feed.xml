@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-PT">
+  <title>Meanify · Artigos</title>
+  <subtitle>Artigos curtos e práticos sobre desenvolvimento acelerado com IA, Forward Deployed Engineers, automação e dados, escritos pela equipa da Meanify.</subtitle>
+  <link href="https://www.meanify.eu/pt/artigos/feed.xml" rel="self"/>
+  <link href="https://www.meanify.eu/pt/artigos/"/>
+  <id>https://www.meanify.eu/pt/artigos/feed.xml</id>
+  <author><name>Meanify</name><email>info@meanify.eu</email></author>
+  <updated>2026-10-30T00:00:00Z</updated>
+  <entry>
+    <title>Desenvolvimento com IA e revisão humana: como validamos código escrito com IA</title>
+    <link href="https://www.meanify.eu/pt/artigos/desenvolvimento-com-ia-com-revisao-humana/"/>
+    <id>https://www.meanify.eu/pt/artigos/desenvolvimento-com-ia-com-revisao-humana/</id>
+    <published>2026-10-30T00:00:00Z</published>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <summary>A IA escreve código em minutos, mas rapidez sem revisão é um risco. Como um processo com revisão humana mantém o software feito com IA rápido, acessível e fiável.</summary>
+  </entry>
+  <entry>
+    <title>O que é um Forward Deployed Engineer?</title>
+    <link href="https://www.meanify.eu/pt/artigos/o-que-e-um-forward-deployed-engineer/"/>
+    <id>https://www.meanify.eu/pt/artigos/o-que-e-um-forward-deployed-engineer/</id>
+    <published>2026-10-30T00:00:00Z</published>
+    <updated>2026-10-30T00:00:00Z</updated>
+    <summary>Um Forward Deployed Engineer trabalha dentro da equipa do cliente, perto dos utilizadores e do problema. O que faz, como difere de consultores e prestadores de serviços, e porque se adequa a projetos de IA.</summary>
+  </entry>
+</feed>

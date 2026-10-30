@@ -1,0 +1,53 @@
+# Meanify
+
+> Meanify is an AI engineering company based in Évora, Portugal. Our Forward Deployed Engineers use AI-accelerated development to build software, AI automation, multi-agent systems, data pipelines and governance, and small physical AI projects, with a human reviewing every step.
+
+- Location: ÉvoraTech, Évora, Portugal
+- Languages: English, Portuguese (pt-PT)
+- Email: info@meanify.eu
+- Phone and WhatsApp: +351 962 390 920
+- Area served: Portugal and the European Union
+
+How Meanify works: Every Meanify project follows the same validated process. AI speeds up the repetitive work, engineers review every change, and you approve every delivery. That is how we deliver faster and at lower cost without giving up reliability.
+
+## Services
+
+- [AI-Accelerated Development](https://www.meanify.eu/en/services/ai-accelerated-development/): Engineers who join your team and ship production software faster and at lower cost, using validated AI workflows with a human reviewing every step.
+- [AI Automation](https://www.meanify.eu/en/services/ai-automation/): Automate repetitive workflows with AI, while people keep approving the decisions that matter.
+- [Multi-Agent Systems](https://www.meanify.eu/en/services/multi-agent-systems/): Coordinated AI agents that handle complex, multi-step work, with guardrails, monitoring and human approval points.
+- [Data Pipelines & Governance](https://www.meanify.eu/en/services/data-pipelines-governance/): Reliable data pipelines, data management and governance, ready for analytics, AI and the GDPR.
+- [Physical AI](https://www.meanify.eu/en/services/physical-ai/): Small, practical AI projects that connect sensors, cameras and devices for local companies.
+
+## Company
+
+- [How we work](https://www.meanify.eu/en/how-we-work/): Our five-step, validated process: AI speeds up the work, engineers review every change, and you approve every delivery.
+- [About](https://www.meanify.eu/en/about/): Meanify is an AI engineering company based at ÉvoraTech, Évora. We combine AI speed with human judgement to build software and data systems.
+- [FAQ](https://www.meanify.eu/en/faq/): Answers about Forward Deployed Engineers, AI-written code, human in the loop, data security, the GDPR, the EU AI Act and working with Meanify.
+- [Contact](https://www.meanify.eu/en/contact/): Talk directly to a Meanify engineer by WhatsApp, email or phone. ÉvoraTech, Évora, Portugal. +351 962 390 920, info@meanify.eu.
+- [AI readiness checklist](https://www.meanify.eu/en/ai-readiness-checklist/): A free 17-point checklist to see if your company is ready for an AI project: goals, process, data, systems, people and risk. No sign-up.
+
+## Insights
+
+- [Human-in-the-loop AI development: how we validate AI-written code](https://www.meanify.eu/en/insights/human-in-the-loop-ai-development/): AI can write code in minutes, but speed without review is a risk. How a human-in-the-loop process keeps AI-assisted software fast, affordable and reliable.
+- [What is a Forward Deployed Engineer?](https://www.meanify.eu/en/insights/what-is-a-forward-deployed-engineer/): A Forward Deployed Engineer works inside the client's team, close to the users and the problem. What the role is, how it differs from consultants and contractors, and why it suits AI projects.
+
+## Português
+
+- [Início](https://www.meanify.eu/pt/): Engenheiros que desenvolvem software, automação com IA, sistemas multiagente e plataformas de dados mais rápido e a menor custo. Revisão humana. Évora.
+- [Desenvolvimento Acelerado com IA](https://www.meanify.eu/pt/servicos/desenvolvimento-acelerado-com-ia/): Engenheiros que se juntam à sua equipa e entregam software em produção mais rápido e a menor custo, com processos de IA validados e revisão humana em cada passo.
+- [Automação com IA](https://www.meanify.eu/pt/servicos/automacao-com-ia/): Automatize processos repetitivos com IA, mantendo as pessoas a aprovar as decisões importantes.
+- [Sistemas Multiagente](https://www.meanify.eu/pt/servicos/sistemas-multiagente/): Agentes de IA coordenados que tratam trabalho complexo, em vários passos, com regras de controlo, monitorização e aprovação humana.
+- [Pipelines e Governança de Dados](https://www.meanify.eu/pt/servicos/pipelines-e-governanca-de-dados/): Pipelines de dados fiáveis, gestão e governança de dados, preparados para análise, IA e RGPD.
+- [IA Física](https://www.meanify.eu/pt/servicos/ia-fisica/): Projetos de IA pequenos e práticos que ligam sensores, câmaras e dispositivos, para empresas locais.
+- [Como trabalhamos](https://www.meanify.eu/pt/como-trabalhamos/)
+- [Perguntas frequentes](https://www.meanify.eu/pt/perguntas-frequentes/)
+- [Contacto](https://www.meanify.eu/pt/contacto/)
+- [Checklist de preparação para IA](https://www.meanify.eu/pt/checklist-preparacao-ia/)
+- [Desenvolvimento com IA e revisão humana: como validamos código escrito com IA](https://www.meanify.eu/pt/artigos/desenvolvimento-com-ia-com-revisao-humana/)
+- [O que é um Forward Deployed Engineer?](https://www.meanify.eu/pt/artigos/o-que-e-um-forward-deployed-engineer/)
+
+## Optional
+
+- [Full text of this site for AI assistants](https://www.meanify.eu/llms-full.txt)
+- [Privacy Policy](https://www.meanify.eu/en/privacy/)
+- [Sitemap](https://www.meanify.eu/sitemap.xml)

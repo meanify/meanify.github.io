@@ -1,0 +1,758 @@
+# Meanify — full site content
+
+This file contains the main content of www.meanify.eu in English and Portuguese, for AI assistants and search engines. Last updated: 2026-10-30.
+
+
+---
+
+# English
+
+## Software and AI systems, built faster by engineers, validated by humans.
+
+Meanify's Forward Deployed Engineers join your team and use proven AI workflows to deliver software, automation and data systems faster and at lower cost. A person reviews every step.
+
+Source: https://www.meanify.eu/en/
+
+Contact: info@meanify.eu · +351 962 390 920 (WhatsApp) · ÉvoraTech, Évora, Portugal
+
+
+## AI-Accelerated Development
+
+Source: https://www.meanify.eu/en/services/ai-accelerated-development/
+
+AI-accelerated development is how Meanify builds software. Our Forward Deployed Engineers work inside your team and use proven AI workflows to write code, tests and documentation faster. An engineer reviews every change before it ships, so you get speed and lower cost without losing quality or control.
+
+### Who it's for
+
+- Companies that need a new product, internal tool or integration
+- Teams with a backlog bigger than their capacity
+- Organisations modernising legacy systems
+- Start-ups that need to reach production quickly
+
+### Problems we solve
+
+- Software projects that take months and go over budget
+- Hiring a full in-house team is slow and expensive
+- Worry that AI-written code is unreliable or insecure
+- Legacy code that nobody wants to touch
+
+### What's included
+
+- Embedded engineers: Our engineers work in your tools, repositories and team routines, close to your users.
+- Production software: Web applications, APIs, integrations and internal tools, built to run in production.
+- Tests and documentation: Generated with AI, checked by engineers and delivered with the code.
+- Review on every change: No AI-assisted code is merged without an engineer's review and passing tests.
+- Full handover: Your team owns the code and gets the documentation to maintain it.
+
+### How it works
+
+1. Discovery: A short workshop to agree on scope, priorities and what success looks like. (Human checkpoint: You approve the scope.)
+2. Set-up: Engineers join your team and set up the AI-assisted workflow in your repositories. (Human checkpoint: Your team agrees on tools and access.)
+3. Build in short iterations: AI drafts code and tests; engineers design, review and refine them. (Human checkpoint: Every change is reviewed and tested.)
+4. Deliver and hand over: Demo, deploy and hand over with documentation. (Human checkpoint: You accept each delivery.)
+
+### Technologies we use
+
+TypeScript, Python, React, Node.js, PostgreSQL, Docker, AWS, Azure or Google Cloud, CI/CD with automated tests
+
+### Frequently asked questions
+
+**What is a Forward Deployed Engineer?**
+A Forward Deployed Engineer is a software engineer who works directly inside a client's team, close to the users and the problem, instead of building in isolation. At Meanify, our Forward Deployed Engineers also bring validated AI workflows that speed up delivery.
+
+**Is AI-written code safe to use in production?**
+Only when it is reviewed and tested. At Meanify, an engineer reviews every AI-assisted change, and it must pass automated tests before it is merged. AI speeds up the work; engineers stay responsible for the result.
+
+**Why is AI-accelerated development cheaper?**
+AI handles a large share of repetitive work such as boilerplate code, tests and documentation, so engineers spend their time on design, review and the hard problems. Fewer hours are needed to reach the same quality.
+
+**Who owns the code?**
+You do. The code is written in your repositories and handed over with documentation so your team can maintain it.
+
+
+## AI Automation
+
+Source: https://www.meanify.eu/en/services/ai-automation/
+
+AI automation uses language models and integrations to handle repetitive work such as reading documents, routing requests, updating systems and drafting replies. Meanify designs each automation with clear human approval points, so routine tasks run on their own and important decisions stay with your team.
+
+### Who it's for
+
+- Operations and back-office teams
+- Finance teams processing invoices and documents
+- Customer service teams handling many requests
+- Any team copying data between systems by hand
+
+### Problems we solve
+
+- Hours lost copying data between tools
+- Documents and emails that must be read, sorted and routed
+- Errors from manual data entry
+- Old automations that break whenever something changes
+
+### What's included
+
+- Process mapping: We find the steps worth automating and the ones that should stay with a person.
+- Document and email processing: Extract data from invoices, forms, contracts and emails, and classify them.
+- System integrations: Connect your ERP, CRM, email and spreadsheets through APIs.
+- Human approval steps: Review queues and approvals wherever judgement is needed.
+- Monitoring: Logs, alerts and reports so you can always see what the automation did.
+
+### How it works
+
+1. Map the process: We map the current process and measure the effort it takes today. (Human checkpoint: You confirm the process and priorities.)
+2. Design: We design the automation and agree where people approve. (Human checkpoint: You approve the rules and approval points.)
+3. Build and test: We build and test with real examples from your own data. (Human checkpoint: Results are checked against real cases.)
+4. Run and monitor: The automation runs alongside the current process first, then takes over with monitoring. (Human checkpoint: You decide when to switch over.)
+
+### Technologies we use
+
+Large language models (LLMs), Document AI and OCR, REST APIs and webhooks, Workflow automation tools, Microsoft 365 and Google Workspace, ERP and CRM integrations
+
+### Frequently asked questions
+
+**What kind of processes can be automated with AI?**
+Processes that are repetitive and follow recognisable patterns: reading and classifying documents, extracting data, routing requests, updating records and drafting standard replies. Steps that need judgement can stay with a person as an approval.
+
+**Will the automation make decisions without us?**
+Only the ones you agree to. We define approval points together, and anything outside the agreed rules goes to a person for review.
+
+**Do we need to replace our current software?**
+No. We connect to the tools you already use through their APIs or other integrations.
+
+
+## Multi-Agent Systems
+
+Source: https://www.meanify.eu/en/services/multi-agent-systems/
+
+A multi-agent system is a group of specialised AI agents that work together on a task: one plans, others look up information, act on your systems or check the results. Meanify designs and builds multi-agent systems with guardrails, full logging and human approval at key steps, so they are reliable enough for real business processes.
+
+### Who it's for
+
+- Companies with complex processes that span several systems
+- Teams that tried a single chatbot and reached its limits
+- Organisations that need AI assistants connected to internal data and tools
+- Product teams adding agent features to their software
+
+### Problems we solve
+
+- A general-purpose chatbot can't handle multi-step work reliably
+- No visibility into what the AI did or why
+- Risk of AI taking actions without control
+- Agents that work in a demo but fail in production
+
+### What's included
+
+- Agent architecture: We choose the agents' roles, their tools and how they coordinate.
+- Tool and data integrations: Agents connect to your systems and documents, including through the Model Context Protocol (MCP).
+- Guardrails: Permissions, limits and checks on what each agent is allowed to do.
+- Human approvals: Important actions wait for a person to approve them.
+- Evaluation and monitoring: Test sets, logging and tracing to measure quality over time.
+
+### How it works
+
+1. Define the task: We agree on the task, what success looks like and the risks. (Human checkpoint: You approve the scope and limits.)
+2. Prototype: We build a first version and test it on a set of real cases. (Human checkpoint: Results are reviewed case by case.)
+3. Add controls: We add guardrails, approval steps and monitoring. (Human checkpoint: You decide which actions need approval.)
+4. Roll out: We roll out gradually and keep evaluating after every change. (Human checkpoint: Quality is reviewed before each release.)
+
+### Technologies we use
+
+Anthropic Claude, OpenAI and open-source models, Model Context Protocol (MCP), Agent orchestration frameworks, Retrieval-augmented generation (RAG), Vector databases, Tracing and evaluation tools
+
+### Frequently asked questions
+
+**What is the difference between an AI agent and a multi-agent system?**
+An AI agent is a single model that can use tools to complete a task. A multi-agent system splits the work between several specialised agents that coordinate, which makes complex tasks easier to control, test and improve.
+
+**How do you keep AI agents under control?**
+Each agent only gets the permissions it needs, every action is logged, and important actions need human approval. We also test agents against a set of real cases before and after every change.
+
+**Can the agents use our internal data?**
+Yes. We connect agents to your documents, databases and tools with access controls, so they only see what they are allowed to see.
+
+
+## Data Pipelines & Governance
+
+Source: https://www.meanify.eu/en/services/data-pipelines-governance/
+
+Data pipelines move data from your systems to where it is used, cleaning and checking it along the way. Meanify builds data pipelines and sets up data management and governance (quality checks, lineage, access control and retention rules), so your data is reliable for reporting and AI and compliant with the GDPR.
+
+### Who it's for
+
+- Companies whose reports don't match between departments
+- Organisations preparing their data for AI projects
+- Regulated sectors that need traceability and access control
+- Teams maintaining fragile scripts and spreadsheets
+
+### Problems we solve
+
+- Data spread across many systems and spreadsheets
+- Nobody trusts the numbers
+- Pipelines that break without anyone noticing
+- No clear rules on who can access which data, or how long it is kept
+
+### What's included
+
+- Data pipelines: Batch and streaming ingestion, transformation and loading.
+- Data quality checks: Automated tests that catch errors before they reach your reports.
+- Data modelling: Warehouse or lakehouse models designed for analytics and AI.
+- Governance: Catalogue, lineage, ownership, access control and retention policies.
+- GDPR and EU AI Act support: Documentation and controls for personal data and AI use.
+
+### How it works
+
+1. Audit: We review your data sources, flows and pain points. (Human checkpoint: You confirm priorities and owners.)
+2. Design: We design the target architecture and the governance rules. (Human checkpoint: You approve the architecture and rules.)
+3. Build: We build pipelines with tests and monitoring from day one. (Human checkpoint: Every pipeline change is reviewed.)
+4. Hand over: We document everything and train your team. (Human checkpoint: Your team signs off the handover.)
+
+### Technologies we use
+
+SQL and Python, dbt, Apache Airflow, Apache Spark, PostgreSQL, Cloud data warehouses, Data catalogue and lineage tools
+
+### Frequently asked questions
+
+**What is data governance?**
+Data governance is the set of rules and responsibilities that decide who owns each dataset, who can access it, how its quality is checked and how long it is kept. It makes data trustworthy and helps meet legal requirements such as the GDPR.
+
+**Do we need clean data before starting an AI project?**
+You need data that is good enough for the task. We often start with a short data audit, fix the issues that matter for the project and add quality checks so problems are caught early.
+
+**Can you work with our existing data platform?**
+Yes. We build on the databases, warehouses and cloud services you already use whenever possible.
+
+
+## Physical AI
+
+Source: https://www.meanify.eu/en/services/physical-ai/
+
+Physical AI connects artificial intelligence to the physical world through sensors, cameras and small devices. Meanify works with local companies in Alentejo and across Portugal on small, practical projects, such as monitoring equipment, counting, inspection or measuring energy use, that start small and prove their value quickly.
+
+### Who it's for
+
+- Farms, wineries and agri-food companies
+- Small factories and workshops
+- Shops, warehouses and logistics
+- Buildings that need to monitor energy, equipment or space
+
+### Problems we solve
+
+- Manual checks and readings that take time
+- Problems found too late: breakdowns, waste or quality issues
+- IoT projects that seem too big or expensive for a small company
+- Data from machines and sensors that nobody uses
+
+### What's included
+
+- Feasibility check: A short visit to see whether the idea is worth doing.
+- Sensors and devices: Choosing and installing affordable hardware.
+- Computer vision: Cameras that count, inspect or detect events.
+- Edge AI: Models that run on small devices on site, without sending everything to the cloud.
+- Dashboards and alerts: Simple screens and notifications your team will actually use.
+
+### How it works
+
+1. Site visit: We visit your site and check what is feasible. (Human checkpoint: You decide whether to go ahead.)
+2. Pilot: A small pilot with one device, one machine or one line. (Human checkpoint: Your team checks the readings.)
+3. Measure: We measure the results together against what was agreed. (Human checkpoint: You judge whether it delivered value.)
+4. Scale: If it works, we extend it to more sites or machines. (Human checkpoint: You approve each extension.)
+
+### Technologies we use
+
+Raspberry Pi and ESP32, NVIDIA Jetson, Computer vision models, LoRaWAN and Wi-Fi sensors, MQTT, Dashboards
+
+### Frequently asked questions
+
+**What is physical AI?**
+Physical AI is artificial intelligence that senses or acts in the physical world, using sensors, cameras or devices. Examples include cameras that inspect product quality, sensors that warn of equipment failures and systems that monitor energy use.
+
+**Is physical AI only for large factories?**
+No. We focus on small projects for local companies, starting with a pilot on one machine, line or site, so the investment stays small until the value is proven.
+
+**Do you work outside Alentejo?**
+Yes. We are based in Évora and work across Portugal. On-site work outside Alentejo is planned per project.
+
+
+## A validated AI process, with a human in the loop
+
+Source: https://www.meanify.eu/en/how-we-work/
+
+Every Meanify project follows the same validated process. AI speeds up the repetitive work, engineers review every change, and you approve every delivery. That is how we deliver faster and at lower cost without giving up reliability.
+
+1. Discover: We learn your process, goals and constraints, and agree on what success looks like. (Human checkpoint: You approve the scope and success criteria.)
+2. Plan: We define the architecture, the iterations and where the review checkpoints are. (Human checkpoint: You approve the plan.)
+3. Build with AI: Engineers use validated AI workflows to draft code, tests, automations and documentation. (Human checkpoint: Engineers design and guide the work.)
+4. Validate: Every change is reviewed by an engineer and checked by automated tests before it is merged. (Human checkpoint: Nothing ships without review.)
+5. Deliver and support: We demo, deploy and hand over with documentation, then support you after go-live. (Human checkpoint: You accept each delivery.)
+
+### What AI does, and what people decide
+
+- AI does: Drafts code, tests and documentation — People decide: Architecture, design and what gets merged
+- AI does: Reads, extracts and classifies documents — People decide: Rules, exceptions and approvals
+- AI does: Suggests actions in agent workflows — People decide: Which actions run, and with what permissions
+- AI does: Checks data quality at scale — People decide: Data ownership, access and retention
+
+### Forward Deployed Engineers
+
+Our engineers work inside your team: in your tools, your repositories and your routines. They stay close to your users and the real problem, so what we build fits how your business actually works.
+
+### Security, data and ownership
+
+- Your data stays yours: We use AI services and settings that do not train on client data, and can use EU-hosted or on-premise models when needed.
+- You own the result: Code, automations and documentation belong to you and live in your systems.
+- Privacy by design: Access control, data minimisation and retention rules are part of the design, in line with the GDPR.
+- Traceable work: Reviews, tests and decisions are recorded, so you can see who approved what and when.
+
+
+## An AI engineering company from Évora
+
+Source: https://www.meanify.eu/en/about/
+
+Meanify is an AI engineering company based at ÉvoraTech, in Évora, Portugal. Our Forward Deployed Engineers use AI-accelerated development to build software, AI automation, multi-agent systems, data platforms and small physical AI projects, with a human reviewing every step.
+
+AI has changed how software is built. Work that took weeks can now take days, but only if someone with experience checks that the result is right.
+
+We started Meanify to bring that speed to companies of every size, without the risk. We combine validated AI workflows with engineers who take responsibility for every change.
+
+- Human in the loop: AI helps us work faster. People stay responsible for decisions and quality.
+- Honest advice: If AI is not the right answer to your problem, we will tell you.
+- Practical results: We start small, prove value and grow from there.
+- Close to our clients: We work inside your team and speak your language, in English or Portuguese.
+
+We are part of the ÉvoraTech community in Évora. We work remotely with clients across Portugal and Europe, and on site with local companies in Alentejo.
+
+## Frequently asked questions
+
+Source: https://www.meanify.eu/en/faq/
+
+### About Meanify
+
+**What does Meanify do?**
+Meanify is an AI engineering company based in Évora, Portugal. Our Forward Deployed Engineers use AI-accelerated development to build software, AI automation, multi-agent systems, data pipelines and governance, and small physical AI projects, with a human reviewing every step.
+
+**Where is Meanify based?**
+At ÉvoraTech, in Évora, Portugal. We work with clients across Portugal and Europe, remotely and on site.
+
+**Which languages do you work in?**
+English and Portuguese.
+
+**Do you work with small companies?**
+Yes. Many of our projects start small, such as one automation, one pilot or one engineer embedded in your team, and grow once they have proven their value.
+
+### AI and quality
+
+**What is a Forward Deployed Engineer?**
+A Forward Deployed Engineer is a software engineer who works directly inside a client's team, close to the users and the problem, instead of building in isolation. At Meanify, our Forward Deployed Engineers also bring validated AI workflows that speed up delivery.
+
+**What does "human in the loop" mean?**
+It means a person reviews and approves the work at defined points. At Meanify, an engineer reviews every AI-assisted change, automated tests check it, and you approve every delivery.
+
+**Is AI-written code safe to use in production?**
+Only when it is reviewed and tested. An engineer reviews every AI-assisted change, and it must pass automated tests before it is merged. AI speeds up the work; engineers stay responsible for the result.
+
+**How much faster and cheaper is AI-accelerated development?**
+It depends on the project. AI shortens repetitive work such as boilerplate code, tests and documentation, so projects usually need fewer hours. We estimate each project after a short discovery.
+
+### Data and security
+
+**Is our data used to train AI models?**
+No. We use AI services and settings that do not train on client data, and we can use EU-hosted or on-premise models when required.
+
+**Do you comply with the GDPR?**
+Yes. We follow the GDPR in our own work and design client systems with data protection built in: access control, data minimisation and retention rules.
+
+**Can you help with the EU AI Act?**
+Yes. We help you understand which EU AI Act obligations apply to your systems and build in the documentation, transparency and human oversight they require.
+
+### Working together
+
+**How does a project start?**
+With a conversation. Send us a message on WhatsApp, an email or call us. We then run a short discovery and send you a proposal with scope, timeline and price.
+
+**Who owns the code and intellectual property?**
+You do. Everything we build lives in your systems and is handed over with documentation.
+
+**Do you provide support after delivery?**
+Yes. We offer support and maintenance after go-live, and we hand over documentation so your own team can maintain the system too.
+
+**How do you charge?**
+It depends on the project: a fixed price for a well-defined scope, or a monthly engagement for Forward Deployed Engineers embedded in your team.
+
+
+---
+
+# Português
+
+## Software e sistemas de IA, feitos mais rápido por engenheiros, validados por pessoas.
+
+Os Forward Deployed Engineers da Meanify juntam-se à sua equipa e usam processos de IA comprovados para entregar software, automação e sistemas de dados mais rápido e a menor custo. Uma pessoa revê cada passo.
+
+Source: https://www.meanify.eu/pt/
+
+Contact: info@meanify.eu · +351 962 390 920 (WhatsApp) · ÉvoraTech, Évora, Portugal
+
+
+## Desenvolvimento Acelerado com IA
+
+Source: https://www.meanify.eu/pt/servicos/desenvolvimento-acelerado-com-ia/
+
+O desenvolvimento acelerado com IA é a forma como a Meanify cria software. Os nossos Forward Deployed Engineers trabalham dentro da sua equipa e usam processos de IA comprovados para escrever código, testes e documentação mais depressa. Um engenheiro revê cada alteração antes de avançar, por isso ganha rapidez e menor custo sem perder qualidade nem controlo.
+
+### Para quem é
+
+- Empresas que precisam de um novo produto, ferramenta interna ou integração
+- Equipas com mais trabalho pendente do que capacidade
+- Organizações a modernizar sistemas antigos
+- Startups que precisam de chegar rapidamente à produção
+
+### Problemas que resolvemos
+
+- Projetos de software que demoram meses e ultrapassam o orçamento
+- Contratar uma equipa interna completa é lento e caro
+- Receio de que o código escrito com IA seja pouco fiável ou inseguro
+- Código antigo em que ninguém quer mexer
+
+### O que inclui
+
+- Engenheiros integrados: Os nossos engenheiros trabalham nas suas ferramentas, repositórios e rotinas, perto dos seus utilizadores.
+- Software em produção: Aplicações web, APIs, integrações e ferramentas internas, feitas para funcionar em produção.
+- Testes e documentação: Gerados com IA, verificados por engenheiros e entregues com o código.
+- Revisão em cada alteração: Nenhum código feito com IA é integrado sem revisão de um engenheiro e testes aprovados.
+- Passagem completa: O código é seu, e a sua equipa recebe a documentação para o manter.
+
+### Como funciona
+
+1. Descoberta: Uma sessão curta para acordar o âmbito, as prioridades e o que é um bom resultado. (Validação humana: Aprova o âmbito.)
+2. Preparação: Os engenheiros juntam-se à equipa e preparam o processo com IA nos seus repositórios. (Validação humana: A sua equipa acorda ferramentas e acessos.)
+3. Desenvolvimento em ciclos curtos: A IA propõe código e testes; os engenheiros desenham, revêem e melhoram. (Validação humana: Cada alteração é revista e testada.)
+4. Entrega e passagem: Demonstração, entrada em produção e passagem com documentação. (Validação humana: Aceita cada entrega.)
+
+### Tecnologias que usamos
+
+TypeScript, Python, React, Node.js, PostgreSQL, Docker, AWS, Azure ou Google Cloud, CI/CD com testes automáticos
+
+### Perguntas frequentes
+
+**O que é um Forward Deployed Engineer?**
+Um Forward Deployed Engineer é um engenheiro de software que trabalha diretamente dentro da equipa do cliente, perto dos utilizadores e do problema, em vez de desenvolver isolado. Na Meanify, os nossos Forward Deployed Engineers trazem também processos de IA validados que aceleram as entregas.
+
+**O código escrito com IA é seguro para usar em produção?**
+Só quando é revisto e testado. Na Meanify, um engenheiro revê cada alteração feita com IA, e ela tem de passar nos testes automáticos antes de ser integrada. A IA acelera o trabalho; os engenheiros continuam responsáveis pelo resultado.
+
+**Porque é que o desenvolvimento acelerado com IA é mais barato?**
+A IA faz grande parte do trabalho repetitivo, como código base, testes e documentação, e os engenheiros dedicam o seu tempo ao desenho da solução, à revisão e aos problemas difíceis. São precisas menos horas para atingir a mesma qualidade.
+
+**De quem é o código?**
+É seu. O código é escrito nos seus repositórios e entregue com documentação para que a sua equipa o possa manter.
+
+
+## Automação com IA
+
+Source: https://www.meanify.eu/pt/servicos/automacao-com-ia/
+
+A automação com IA usa modelos de linguagem e integrações para tratar trabalho repetitivo, como ler documentos, encaminhar pedidos, atualizar sistemas e preparar respostas. A Meanify desenha cada automação com pontos de aprovação humana claros, para que as tarefas de rotina corram sozinhas e as decisões importantes fiquem com a sua equipa.
+
+### Para quem é
+
+- Equipas de operações e back-office
+- Equipas financeiras que tratam faturas e documentos
+- Equipas de apoio ao cliente com muitos pedidos
+- Qualquer equipa que copia dados entre sistemas à mão
+
+### Problemas que resolvemos
+
+- Horas perdidas a copiar dados entre ferramentas
+- Documentos e emails que é preciso ler, classificar e encaminhar
+- Erros na introdução manual de dados
+- Automações antigas que falham sempre que algo muda
+
+### O que inclui
+
+- Mapeamento de processos: Identificamos os passos que vale a pena automatizar e os que devem ficar com uma pessoa.
+- Tratamento de documentos e emails: Extração de dados de faturas, formulários, contratos e emails, e respetiva classificação.
+- Integração de sistemas: Ligação do seu ERP, CRM, email e folhas de cálculo através de APIs.
+- Passos de aprovação humana: Filas de revisão e aprovações sempre que é preciso critério.
+- Monitorização: Registos, alertas e relatórios para ver sempre o que a automação fez.
+
+### Como funciona
+
+1. Mapear o processo: Mapeamos o processo atual e medimos o esforço que exige hoje. (Validação humana: Confirma o processo e as prioridades.)
+2. Desenhar: Desenhamos a automação e acordamos onde as pessoas aprovam. (Validação humana: Aprova as regras e os pontos de aprovação.)
+3. Construir e testar: Construímos e testamos com exemplos reais dos seus dados. (Validação humana: Os resultados são verificados com casos reais.)
+4. Pôr a funcionar e monitorizar: A automação corre primeiro em paralelo com o processo atual e depois assume, com monitorização. (Validação humana: Decide quando fazer a mudança.)
+
+### Tecnologias que usamos
+
+Modelos de linguagem (LLM), IA para documentos e OCR, APIs REST e webhooks, Ferramentas de automação de fluxos, Microsoft 365 e Google Workspace, Integrações com ERP e CRM
+
+### Perguntas frequentes
+
+**Que tipo de processos se podem automatizar com IA?**
+Processos repetitivos que seguem padrões reconhecíveis: ler e classificar documentos, extrair dados, encaminhar pedidos, atualizar registos e preparar respostas-tipo. Os passos que exigem critério podem ficar com uma pessoa, como aprovação.
+
+**A automação vai tomar decisões sem nós?**
+Apenas as que acordar connosco. Definimos os pontos de aprovação em conjunto, e tudo o que sair das regras acordadas vai para revisão de uma pessoa.
+
+**Temos de substituir o software que usamos?**
+Não. Ligamo-nos às ferramentas que já usa, através das respetivas APIs ou de outras integrações.
+
+
+## Sistemas Multiagente
+
+Source: https://www.meanify.eu/pt/servicos/sistemas-multiagente/
+
+Um sistema multiagente é um grupo de agentes de IA especializados que trabalham em conjunto numa tarefa: um planeia, outros procuram informação, atuam nos seus sistemas ou verificam os resultados. A Meanify concebe e desenvolve sistemas multiagente com regras de controlo, registo completo e aprovação humana nos passos-chave, para que sejam fiáveis em processos reais de negócio.
+
+### Para quem é
+
+- Empresas com processos complexos que envolvem vários sistemas
+- Equipas que experimentaram um chatbot e chegaram aos seus limites
+- Organizações que precisam de assistentes de IA ligados a dados e ferramentas internas
+- Equipas de produto a adicionar agentes ao seu software
+
+### Problemas que resolvemos
+
+- Um chatbot genérico não consegue fazer trabalho em vários passos de forma fiável
+- Não se sabe o que a IA fez nem porquê
+- Risco de a IA executar ações sem controlo
+- Agentes que funcionam numa demonstração mas falham em produção
+
+### O que inclui
+
+- Arquitetura de agentes: Definimos os papéis dos agentes, as suas ferramentas e a forma como se coordenam.
+- Integração com ferramentas e dados: Os agentes ligam-se aos seus sistemas e documentos, incluindo através do Model Context Protocol (MCP).
+- Regras de controlo: Permissões, limites e verificações sobre o que cada agente pode fazer.
+- Aprovações humanas: As ações importantes esperam pela aprovação de uma pessoa.
+- Avaliação e monitorização: Conjuntos de testes, registos e rastreio para medir a qualidade ao longo do tempo.
+
+### Como funciona
+
+1. Definir a tarefa: Acordamos a tarefa, o que é um bom resultado e os riscos. (Validação humana: Aprova o âmbito e os limites.)
+2. Protótipo: Construímos uma primeira versão e testamo-la num conjunto de casos reais. (Validação humana: Os resultados são revistos caso a caso.)
+3. Adicionar controlos: Acrescentamos regras de controlo, passos de aprovação e monitorização. (Validação humana: Decide que ações precisam de aprovação.)
+4. Implementar: Implementamos de forma gradual e continuamos a avaliar após cada alteração. (Validação humana: A qualidade é revista antes de cada versão.)
+
+### Tecnologias que usamos
+
+Anthropic Claude, OpenAI e modelos open-source, Model Context Protocol (MCP), Frameworks de orquestração de agentes, Geração aumentada por recuperação (RAG), Bases de dados vetoriais, Ferramentas de rastreio e avaliação
+
+### Perguntas frequentes
+
+**Qual é a diferença entre um agente de IA e um sistema multiagente?**
+Um agente de IA é um único modelo que pode usar ferramentas para concluir uma tarefa. Um sistema multiagente divide o trabalho entre vários agentes especializados que se coordenam, o que torna as tarefas complexas mais fáceis de controlar, testar e melhorar.
+
+**Como mantêm os agentes de IA sob controlo?**
+Cada agente só tem as permissões de que precisa, todas as ações ficam registadas e as ações importantes exigem aprovação humana. Testamos também os agentes com um conjunto de casos reais antes e depois de cada alteração.
+
+**Os agentes podem usar os nossos dados internos?**
+Sim. Ligamos os agentes aos seus documentos, bases de dados e ferramentas com controlo de acessos, para que só vejam o que estão autorizados a ver.
+
+
+## Pipelines e Governança de Dados
+
+Source: https://www.meanify.eu/pt/servicos/pipelines-e-governanca-de-dados/
+
+Os pipelines de dados levam os dados dos seus sistemas até onde são usados, limpando-os e verificando-os pelo caminho. A Meanify desenvolve pipelines de dados e implementa a gestão e governança de dados (controlo de qualidade, linhagem, controlo de acessos e regras de retenção), para que os seus dados sejam fiáveis para relatórios e IA e cumpram o RGPD.
+
+### Para quem é
+
+- Empresas cujos relatórios não batem certo entre departamentos
+- Organizações a preparar os seus dados para projetos de IA
+- Setores regulados que precisam de rastreabilidade e controlo de acessos
+- Equipas que mantêm scripts e folhas de cálculo frágeis
+
+### Problemas que resolvemos
+
+- Dados espalhados por muitos sistemas e folhas de cálculo
+- Ninguém confia nos números
+- Pipelines que falham sem ninguém dar por isso
+- Sem regras claras sobre quem acede a que dados, nem por quanto tempo são guardados
+
+### O que inclui
+
+- Pipelines de dados: Ingestão, transformação e carregamento, em lote ou em tempo real.
+- Controlo de qualidade de dados: Testes automáticos que detetam erros antes de chegarem aos relatórios.
+- Modelação de dados: Modelos de data warehouse ou lakehouse pensados para análise e IA.
+- Governança: Catálogo, linhagem, responsáveis, controlo de acessos e políticas de retenção.
+- Apoio ao RGPD e ao Regulamento da IA: Documentação e controlos para dados pessoais e uso de IA.
+
+### Como funciona
+
+1. Auditoria: Analisamos as fontes de dados, os fluxos e os problemas. (Validação humana: Confirma prioridades e responsáveis.)
+2. Desenho: Desenhamos a arquitetura alvo e as regras de governança. (Validação humana: Aprova a arquitetura e as regras.)
+3. Construção: Construímos os pipelines com testes e monitorização desde o primeiro dia. (Validação humana: Cada alteração aos pipelines é revista.)
+4. Passagem: Documentamos tudo e damos formação à sua equipa. (Validação humana: A sua equipa valida a passagem.)
+
+### Tecnologias que usamos
+
+SQL e Python, dbt, Apache Airflow, Apache Spark, PostgreSQL, Data warehouses na cloud, Ferramentas de catálogo e linhagem de dados
+
+### Perguntas frequentes
+
+**O que é a governança de dados?**
+A governança de dados é o conjunto de regras e responsabilidades que define quem é responsável por cada conjunto de dados, quem lhe pode aceder, como se controla a sua qualidade e durante quanto tempo é guardado. Torna os dados fiáveis e ajuda a cumprir requisitos legais como o RGPD.
+
+**Precisamos de dados limpos antes de começar um projeto de IA?**
+Precisa de dados suficientemente bons para a tarefa. Começamos muitas vezes com uma auditoria curta, corrigimos os problemas que importam para o projeto e acrescentamos controlos de qualidade para detetar problemas cedo.
+
+**Podem trabalhar com a nossa plataforma de dados atual?**
+Sim. Sempre que possível, construímos sobre as bases de dados, data warehouses e serviços cloud que já usa.
+
+
+## IA Física
+
+Source: https://www.meanify.eu/pt/servicos/ia-fisica/
+
+A IA física liga a inteligência artificial ao mundo físico através de sensores, câmaras e pequenos dispositivos. A Meanify trabalha com empresas locais do Alentejo e de todo o país em projetos pequenos e práticos, como monitorizar equipamentos, fazer contagens, inspeções ou medir consumos de energia, que começam pequenos e provam o seu valor depressa.
+
+### Para quem é
+
+- Explorações agrícolas, adegas e empresas agroalimentares
+- Pequenas fábricas e oficinas
+- Lojas, armazéns e logística
+- Edifícios que precisam de monitorizar energia, equipamentos ou espaços
+
+### Problemas que resolvemos
+
+- Verificações e leituras manuais que levam tempo
+- Problemas detetados tarde demais: avarias, desperdício ou falhas de qualidade
+- Projetos de IoT que parecem grandes ou caros demais para uma pequena empresa
+- Dados de máquinas e sensores que ninguém usa
+
+### O que inclui
+
+- Estudo de viabilidade: Uma visita curta para perceber se a ideia vale a pena.
+- Sensores e dispositivos: Escolha e instalação de equipamento acessível.
+- Visão computacional: Câmaras que contam, inspecionam ou detetam eventos.
+- IA na periferia (edge AI): Modelos que correm em pequenos dispositivos no local, sem enviar tudo para a cloud.
+- Painéis e alertas: Ecrãs e notificações simples que a sua equipa vai mesmo usar.
+
+### Como funciona
+
+1. Visita ao local: Visitamos as suas instalações e vemos o que é viável. (Validação humana: Decide se avançamos.)
+2. Piloto: Um piloto pequeno com um dispositivo, uma máquina ou uma linha. (Validação humana: A sua equipa verifica as leituras.)
+3. Medir: Medimos os resultados em conjunto, face ao que foi acordado. (Validação humana: Avalia se trouxe valor.)
+4. Crescer: Se funcionar, alargamos a mais locais ou máquinas. (Validação humana: Aprova cada alargamento.)
+
+### Tecnologias que usamos
+
+Raspberry Pi e ESP32, NVIDIA Jetson, Modelos de visão computacional, Sensores LoRaWAN e Wi-Fi, MQTT, Painéis de controlo
+
+### Perguntas frequentes
+
+**O que é a IA física?**
+A IA física é inteligência artificial que deteta ou atua no mundo físico, através de sensores, câmaras ou dispositivos. Por exemplo, câmaras que inspecionam a qualidade de produtos, sensores que avisam de avarias em equipamentos e sistemas que monitorizam o consumo de energia.
+
+**A IA física é só para grandes fábricas?**
+Não. Focamo-nos em projetos pequenos para empresas locais, a começar por um piloto numa máquina, linha ou local, para que o investimento seja pequeno até o valor estar provado.
+
+**Trabalham fora do Alentejo?**
+Sim. Estamos sediados em Évora e trabalhamos em todo o país. O trabalho presencial fora do Alentejo é planeado projeto a projeto.
+
+
+## Um processo de IA validado, com uma pessoa sempre envolvida
+
+Source: https://www.meanify.eu/pt/como-trabalhamos/
+
+Todos os projetos da Meanify seguem o mesmo processo validado. A IA acelera o trabalho repetitivo, os engenheiros revêem cada alteração e o cliente aprova cada entrega. É assim que entregamos mais rápido e a menor custo sem abdicar da fiabilidade.
+
+1. Descobrir: Conhecemos o seu processo, objetivos e restrições, e acordamos o que é um bom resultado. (Validação humana: Aprova o âmbito e os critérios de sucesso.)
+2. Planear: Definimos a arquitetura, os ciclos de trabalho e os pontos de revisão. (Validação humana: Aprova o plano.)
+3. Construir com IA: Os engenheiros usam processos de IA validados para preparar código, testes, automações e documentação. (Validação humana: Os engenheiros desenham e orientam o trabalho.)
+4. Validar: Cada alteração é revista por um engenheiro e verificada por testes automáticos antes de ser integrada. (Validação humana: Nada avança sem revisão.)
+5. Entregar e apoiar: Demonstramos, pomos em produção e passamos tudo com documentação, e damos apoio depois da entrada em funcionamento. (Validação humana: Aceita cada entrega.)
+
+### O que a IA faz e o que as pessoas decidem
+
+- A IA faz: Prepara código, testes e documentação — As pessoas decidem: Arquitetura, desenho e o que é integrado
+- A IA faz: Lê, extrai e classifica documentos — As pessoas decidem: Regras, exceções e aprovações
+- A IA faz: Sugere ações em fluxos com agentes — As pessoas decidem: Que ações correm e com que permissões
+- A IA faz: Verifica a qualidade dos dados em grande escala — As pessoas decidem: Responsáveis, acessos e retenção dos dados
+
+### Forward Deployed Engineers
+
+Os nossos engenheiros trabalham dentro da sua equipa: nas suas ferramentas, nos seus repositórios e nas suas rotinas. Ficam perto dos seus utilizadores e do problema real, para que o que construímos se ajuste à forma como o seu negócio funciona de facto.
+
+### Segurança, dados e propriedade
+
+- Os seus dados continuam seus: Usamos serviços e configurações de IA que não treinam modelos com dados de clientes, e podemos usar modelos alojados na UE ou nas suas instalações quando necessário.
+- O resultado é seu: O código, as automações e a documentação pertencem-lhe e ficam nos seus sistemas.
+- Privacidade desde a conceção: Controlo de acessos, minimização de dados e regras de retenção fazem parte do desenho, de acordo com o RGPD.
+- Trabalho rastreável: Revisões, testes e decisões ficam registados, para saber quem aprovou o quê e quando.
+
+
+## Uma empresa de engenharia de IA de Évora
+
+Source: https://www.meanify.eu/pt/sobre/
+
+A Meanify é uma empresa de engenharia de IA sediada no ÉvoraTech, em Évora. Os nossos Forward Deployed Engineers usam desenvolvimento acelerado com IA para criar software, automação com IA, sistemas multiagente, plataformas de dados e pequenos projetos de IA física, com uma pessoa a rever cada passo.
+
+A IA mudou a forma de fazer software. Trabalho que levava semanas pode agora levar dias, mas só se alguém com experiência confirmar que o resultado está certo.
+
+Criámos a Meanify para levar essa rapidez a empresas de todas as dimensões, sem o risco. Juntamos processos de IA validados a engenheiros que assumem a responsabilidade por cada alteração.
+
+- Uma pessoa sempre envolvida: A IA ajuda-nos a trabalhar mais depressa. As pessoas continuam responsáveis pelas decisões e pela qualidade.
+- Conselhos honestos: Se a IA não for a resposta certa para o seu problema, dizemos-lhe.
+- Resultados práticos: Começamos pequeno, provamos o valor e crescemos a partir daí.
+- Perto dos clientes: Trabalhamos dentro da sua equipa e falamos a sua língua, em português ou inglês.
+
+Fazemos parte da comunidade ÉvoraTech, em Évora. Trabalhamos à distância com clientes em Portugal e na Europa, e presencialmente com empresas locais do Alentejo.
+
+## Perguntas frequentes
+
+Source: https://www.meanify.eu/pt/perguntas-frequentes/
+
+### Sobre a Meanify
+
+**O que faz a Meanify?**
+A Meanify é uma empresa de engenharia de IA sediada em Évora. Os nossos Forward Deployed Engineers usam desenvolvimento acelerado com IA para criar software, automação com IA, sistemas multiagente, pipelines e governança de dados, e pequenos projetos de IA física, com uma pessoa a rever cada passo.
+
+**Onde está sediada a Meanify?**
+No ÉvoraTech, em Évora. Trabalhamos com clientes em Portugal e na Europa, à distância e presencialmente.
+
+**Em que idiomas trabalham?**
+Português e inglês.
+
+**Trabalham com pequenas empresas?**
+Sim. Muitos dos nossos projetos começam pequenos, como uma automação, um piloto ou um engenheiro integrado na sua equipa, e crescem depois de provarem o seu valor.
+
+### IA e qualidade
+
+**O que é um Forward Deployed Engineer?**
+Um Forward Deployed Engineer é um engenheiro de software que trabalha diretamente dentro da equipa do cliente, perto dos utilizadores e do problema, em vez de desenvolver isolado. Na Meanify, os nossos Forward Deployed Engineers trazem também processos de IA validados que aceleram as entregas.
+
+**O que significa ter uma pessoa sempre envolvida ("human in the loop")?**
+Significa que uma pessoa revê e aprova o trabalho em pontos definidos. Na Meanify, um engenheiro revê cada alteração feita com IA, os testes automáticos verificam-na, e o cliente aprova cada entrega.
+
+**O código escrito com IA é seguro para usar em produção?**
+Só quando é revisto e testado. Um engenheiro revê cada alteração feita com IA, e ela tem de passar nos testes automáticos antes de ser integrada. A IA acelera o trabalho; os engenheiros continuam responsáveis pelo resultado.
+
+**Quão mais rápido e barato é o desenvolvimento acelerado com IA?**
+Depende do projeto. A IA encurta o trabalho repetitivo, como código base, testes e documentação, por isso os projetos precisam normalmente de menos horas. Fazemos a estimativa de cada projeto depois de uma fase curta de descoberta.
+
+### Dados e segurança
+
+**Os nossos dados são usados para treinar modelos de IA?**
+Não. Usamos serviços e configurações de IA que não treinam modelos com dados de clientes, e podemos usar modelos alojados na UE ou nas suas instalações quando necessário.
+
+**Cumprem o RGPD?**
+Sim. Cumprimos o RGPD no nosso trabalho e desenhamos os sistemas dos clientes com a proteção de dados incorporada: controlo de acessos, minimização de dados e regras de retenção.
+
+**Podem ajudar com o Regulamento Europeu da IA (AI Act)?**
+Sim. Ajudamos a perceber que obrigações do Regulamento da IA se aplicam aos seus sistemas e incorporamos a documentação, transparência e supervisão humana que exigem.
+
+### Trabalhar connosco
+
+**Como começa um projeto?**
+Com uma conversa. Envie-nos uma mensagem no WhatsApp, um email ou ligue-nos. Depois fazemos uma fase curta de descoberta e enviamos uma proposta com âmbito, prazo e preço.
+
+**De quem é o código e a propriedade intelectual?**
+É sua. Tudo o que construímos fica nos seus sistemas e é entregue com documentação.
+
+**Dão apoio depois da entrega?**
+Sim. Oferecemos apoio e manutenção depois da entrada em funcionamento, e entregamos documentação para que a sua equipa também possa manter o sistema.
+
+**Como cobram?**
+Depende do projeto: um preço fixo para um âmbito bem definido, ou um acordo mensal para Forward Deployed Engineers integrados na sua equipa.
+

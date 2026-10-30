@@ -1,159 +1,37 @@
 /* ==========================================================================
    MEANIFY.EU — Main JavaScript
-   Language switcher, scroll animations, mobile menu, form handling.
+   Theme, language preference, mobile menu, scroll animations,
+   cookie consent and lead tracking for Google Analytics.
    ========================================================================== */
 
 (function () {
   'use strict';
 
-  /* ---------- i18n: Language Switcher ---------- */
+  var currentLang = document.body.getAttribute('data-lang') || 'en';
 
-  let currentLang = 'en';
-
-  /**
-   * Resolve a nested key like "hero.headline" from an object.
-   */
-  function resolve(obj, path) {
-    return path.split('.').reduce(function (acc, key) {
-      return acc && acc[key] !== undefined ? acc[key] : null;
-    }, obj);
-  }
-
-  /**
-   * Apply all translations for the given language.
-   */
-  function applyLanguage(lang) {
-    var strings = translations[lang];
-    if (!strings) return;
-
-    currentLang = lang;
-
-    // Update all [data-i18n] elements
-    document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      var key = el.getAttribute('data-i18n');
-      var value = resolve(strings, key);
-      if (value !== null) {
-        el.textContent = value;
-      }
-    });
-
-    // Update all [data-i18n-placeholder] elements
-    document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
-      var key = el.getAttribute('data-i18n-placeholder');
-      var value = resolve(strings, key);
-      if (value !== null) {
-        el.placeholder = value;
-      }
-    });
-
-    // Update all [data-i18n-alt] elements (e.g. localized image alt text)
-    document.querySelectorAll('[data-i18n-alt]').forEach(function (el) {
-      var key = el.getAttribute('data-i18n-alt');
-      var value = resolve(strings, key);
-      if (value !== null) {
-        el.setAttribute('alt', value);
-      }
-    });
-
-    // Update <html lang>
-    document.documentElement.lang = lang;
-
-    // Update <title>
-    if (strings.meta && strings.meta.title) {
-      document.title = strings.meta.title;
-    }
-
-    // Update meta description
-    var metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && strings.meta && strings.meta.description) {
-      metaDesc.setAttribute('content', strings.meta.description);
-    }
-
-    // Update meta keywords
-    var metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords && strings.meta && strings.meta.keywords) {
-      metaKeywords.setAttribute('content', strings.meta.keywords);
-    }
-
-    // Update OG tags
-    var ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle && strings.meta && strings.meta.title) {
-      ogTitle.setAttribute('content', strings.meta.title);
-    }
-
-    var ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc && strings.meta && strings.meta.description) {
-      ogDesc.setAttribute('content', strings.meta.description);
-    }
-
-    var ogLocale = document.querySelector('meta[property="og:locale"]');
-    if (ogLocale) {
-      ogLocale.setAttribute('content', lang === 'pt' ? 'pt_PT' : 'en_US');
-    }
-
-    // Update Twitter tags
-    var twTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twTitle && strings.meta && strings.meta.title) {
-      twTitle.setAttribute('content', strings.meta.title);
-    }
-
-    var twDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twDesc && strings.meta && strings.meta.description) {
-      twDesc.setAttribute('content', strings.meta.description);
-    }
-
-    // Update language switcher active state
-    document.querySelectorAll('.lang-btn').forEach(function (btn) {
-      var btnLang = btn.getAttribute('data-lang');
-      btn.classList.toggle('lang-btn--active', btnLang === lang);
-      btn.setAttribute('aria-pressed', btnLang === lang ? 'true' : 'false');
-    });
-
-    // Persist choice
-    try {
-      localStorage.setItem('meanify-lang', lang);
-    } catch (e) {
-      // localStorage not available
+  /** Send an event to Google Analytics, if gtag is available. */
+  function track(name, params) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, params || {});
     }
   }
 
-  /**
-   * Detect initial language from localStorage or browser.
-   */
-  function detectLanguage() {
-    // Check localStorage first
-    try {
-      var saved = localStorage.getItem('meanify-lang');
-      if (saved === 'en' || saved === 'pt') return saved;
-    } catch (e) {
-      // ignore
-    }
 
-    // Check browser language
-    var browserLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-    if (browserLang.startsWith('pt')) return 'pt';
+  /* ---------- Language Preference ---------- */
 
-    return 'en';
-  }
-
-  /**
-   * Initialize language switcher buttons.
-   */
+  // Pages are pre-rendered per language; the switcher links to the matching
+  // page. Remember the choice so the root URL sends the visitor there next time.
   function initLanguageSwitcher() {
-    document.querySelectorAll('.lang-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var lang = btn.getAttribute('data-lang');
+    document.querySelectorAll('.lang-btn[data-lang]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        var lang = link.getAttribute('data-lang');
+        try { localStorage.setItem('meanify-lang', lang); } catch (e) {}
         if (lang !== currentLang) {
-          applyLanguage(lang);
+          track('language_switch', { from_language: currentLang, to_language: lang });
         }
       });
     });
-
-    // Apply detected language
-    var lang = detectLanguage();
-    applyLanguage(lang);
   }
-
 
   /* ---------- Theme: Light / Dark ---------- */
 
@@ -257,7 +135,7 @@
     });
 
     // Close menu when a nav link is clicked
-    navMenu.querySelectorAll('.navbar__link').forEach(function (link) {
+    navMenu.querySelectorAll('.navbar__link, .navbar__sublink').forEach(function (link) {
       link.addEventListener('click', function () {
         navMenu.classList.remove('open');
         hamburger.classList.remove('active');
@@ -271,13 +149,25 @@
   /* ---------- Smooth Scrolling ---------- */
 
   function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
-      link.addEventListener('click', function (e) {
-        var targetId = link.getAttribute('href');
-        if (targetId === '#') return;
-        if (link.hasAttribute('data-modal')) return;
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        var target = document.querySelector(targetId);
+    // Arriving from another page with a hash (e.g. /en/#contact): jump to the section
+    // once layout has settled, since smooth scrolling on load is unreliable.
+    if (window.location.hash.length > 1) {
+      var initial = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+      if (initial) {
+        window.addEventListener('load', function () {
+          window.scrollTo({ top: initial.getBoundingClientRect().top + window.pageYOffset - 80, behavior: 'auto' });
+        });
+      }
+    }
+
+    // Handles "#id" and "/en/#id" links that point to a section on the current page.
+    document.querySelectorAll('a[href*="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        if (link.pathname !== window.location.pathname || !link.hash || link.hash === '#') return;
+
+        var target = document.getElementById(decodeURIComponent(link.hash.slice(1)));
         if (!target) return;
 
         e.preventDefault();
@@ -286,8 +176,9 @@
 
         window.scrollTo({
           top: top,
-          behavior: 'smooth'
+          behavior: reduceMotion ? 'auto' : 'smooth'
         });
+        history.replaceState(null, '', link.hash);
       });
     });
   }
@@ -349,192 +240,129 @@
     onScroll();
   }
 
+  /* ---------- Cookie Consent (Google Consent Mode v2) ---------- */
 
-  /* ---------- Formspree Helper ---------- */
+  var CONSENT_KEY = 'meanify-consent';
 
-  var FORMSPREE_URL = 'https://formspree.io/f/maqdewdz';
+  function getConsent() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+  }
 
-  function submitToFormspree(form, onSuccess, onError) {
-    var formData = new FormData(form);
+  function setConsent(value) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch (e) {}
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', { analytics_storage: value });
+    }
+  }
 
-    fetch(FORMSPREE_URL, {
-      method: 'POST',
-      body: formData,
-      headers: { 'Accept': 'application/json' }
-    })
-    .then(function (response) {
-      if (response.ok) {
-        onSuccess();
-      } else {
-        return response.json().then(function (data) {
-          throw new Error(data.error || 'Form submission failed');
+  function initConsent() {
+    var banner = document.getElementById('consentBanner');
+    if (!banner) return;
+
+    function show() { banner.hidden = false; }
+    function hide() { banner.hidden = true; }
+
+    if (getConsent() !== 'granted' && getConsent() !== 'denied') show();
+
+    banner.querySelectorAll('[data-consent]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setConsent(btn.getAttribute('data-consent'));
+        hide();
+      });
+    });
+
+    document.querySelectorAll('[data-consent-open]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        show();
+        var first = banner.querySelector('[data-consent]');
+        if (first) first.focus();
+      });
+    });
+  }
+
+
+  /* ---------- Lead & CTA Tracking ---------- */
+
+  // Links marked with data-lead (whatsapp | email | phone) count as leads in GA4.
+  // On service pages the service id is sent too (data-service on <body>).
+  // Mark generate_lead as a key event in the GA4 admin.
+  function initLeadTracking() {
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest ? e.target.closest('a[data-lead], a[data-cta]') : null;
+      if (!link) return;
+
+      var location = link.getAttribute('data-cta') || 'unknown';
+      var method = link.getAttribute('data-lead');
+
+      var service = link.getAttribute('data-service') || document.body.getAttribute('data-service') || 'none';
+
+      if (method) {
+        track('generate_lead', {
+          method: method,
+          cta_location: location,
+          service: service,
+          page_language: currentLang,
+          page_path: window.location.pathname
         });
+      } else {
+        track('cta_click', { cta_location: location, page_language: currentLang });
       }
-    })
-    .catch(function (err) {
-      onError(err);
     });
   }
 
 
-  /* ---------- Contact Form ---------- */
+  /* ---------- AI Readiness Checklist ---------- */
 
-  function initContactForm() {
-    var form = document.getElementById('contactForm');
+  // Live score, highlighted result, WhatsApp message with the score, and print.
+  function initReadinessChecklist() {
+    var form = document.getElementById('readiness');
     if (!form) return;
 
-    var submitBtn = form.querySelector('[type="submit"]');
-    var originalBtnText = submitBtn ? submitBtn.textContent : '';
+    var total = parseInt(form.getAttribute('data-total'), 10);
+    var scoreEl = document.getElementById('readinessScore');
+    var meter = document.getElementById('readinessMeter');
+    var levels = document.querySelectorAll('.readiness__level');
+    var wa = document.getElementById('readinessWhatsapp');
+    var started = false;
 
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
+    function update() {
+      var score = form.querySelectorAll('.readiness__check:checked').length;
+      scoreEl.textContent = score;
+      meter.style.width = Math.round((score / total) * 100) + '%';
 
-      var name = form.querySelector('[name="name"]').value.trim();
-      var email = form.querySelector('[name="email"]').value.trim();
-      var message = form.querySelector('[name="message"]').value.trim();
-
-      // Basic validation
-      if (!name || !email || !message) {
-        var msgs = {
-          en: 'Please fill in all required fields.',
-          pt: 'Por favor, preencha todos os campos obrigatórios.'
-        };
-        alert(msgs[currentLang] || msgs.en);
-        return;
-      }
-
-      // Email validation
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        var emailMsgs = {
-          en: 'Please enter a valid email address.',
-          pt: 'Por favor, introduza um endereço de email válido.'
-        };
-        alert(emailMsgs[currentLang] || emailMsgs.en);
-        return;
-      }
-
-      // Show loading state
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = currentLang === 'pt' ? 'A enviar...' : 'Sending...';
-      }
-
-      submitToFormspree(form,
-        function () {
-          var successMsgs = {
-            en: 'Thank you! Your message has been sent successfully.',
-            pt: 'Obrigado! A sua mensagem foi enviada com sucesso.'
-          };
-          alert(successMsgs[currentLang] || successMsgs.en);
-          form.reset();
-        },
-        function () {
-          var errorMsgs = {
-            en: 'Something went wrong. Please try again or email us at info@meanify.eu.',
-            pt: 'Algo correu mal. Por favor tente novamente ou envie email para info@meanify.eu.'
-          };
-          alert(errorMsgs[currentLang] || errorMsgs.en);
-        }
-      );
-
-      // Always restore button after a timeout (covers edge cases)
-      setTimeout(function () {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalBtnText;
-        }
-      }, 5000);
-    });
-  }
-
-
-  /* ---------- Newsletter Form ---------- */
-
-  function initNewsletter() {
-    var form = document.getElementById('newsletterForm');
-    if (!form) return;
-
-    var submitBtn = form.querySelector('[type="submit"]');
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      var emailInput = form.querySelector('[name="email"]');
-      var email = emailInput ? emailInput.value.trim() : '';
-
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!email || !emailRegex.test(email)) {
-        var msgs = {
-          en: 'Please enter a valid email address.',
-          pt: 'Por favor, introduza um endereço de email válido.'
-        };
-        alert(msgs[currentLang] || msgs.en);
-        return;
-      }
-
-      if (submitBtn) submitBtn.disabled = true;
-
-      submitToFormspree(form,
-        function () {
-          var successMsgs = {
-            en: 'Thank you for subscribing!',
-            pt: 'Obrigado pela sua subscrição!'
-          };
-          alert(successMsgs[currentLang] || successMsgs.en);
-          form.reset();
-          if (submitBtn) submitBtn.disabled = false;
-        },
-        function () {
-          var errorMsgs = {
-            en: 'Something went wrong. Please try again.',
-            pt: 'Algo correu mal. Por favor tente novamente.'
-          };
-          alert(errorMsgs[currentLang] || errorMsgs.en);
-          if (submitBtn) submitBtn.disabled = false;
-        }
-      );
-    });
-  }
-
-
-  /* ---------- Modals (Privacy / Terms) ---------- */
-
-  function initModals() {
-    // Open modal via data-modal attribute
-    document.querySelectorAll('[data-modal]').forEach(function (trigger) {
-      trigger.addEventListener('click', function (e) {
-        e.preventDefault();
-        var modalId = trigger.getAttribute('data-modal');
-        var modal = document.getElementById(modalId);
-        if (modal) {
-          modal.classList.add('is-open');
-          document.body.classList.add('modal-open');
-        }
+      var active = null;
+      levels.forEach(function (level) {
+        if (score >= parseInt(level.getAttribute('data-min'), 10)) active = level;
       });
-    });
-
-    // Close modal via data-modal-close (overlay or close button)
-    document.querySelectorAll('[data-modal-close]').forEach(function (el) {
-      el.addEventListener('click', function () {
-        var modal = el.closest('.modal');
-        if (modal) {
-          modal.classList.remove('is-open');
-          document.body.classList.remove('modal-open');
-        }
+      levels.forEach(function (level) {
+        level.classList.toggle('readiness__level--active', level === active);
       });
+
+      if (wa) {
+        var text = wa.getAttribute('data-template').replace('{score}', score).replace('{total}', total);
+        wa.href = 'https://wa.me/' + wa.getAttribute('data-phone') + '?text=' + encodeURIComponent(text);
+      }
+      return score;
+    }
+
+    form.addEventListener('change', function () {
+      var score = update();
+      if (!started) {
+        started = true;
+        track('checklist_start', { page_language: currentLang });
+      }
+      if (score === total) track('checklist_complete', { score: score, page_language: currentLang });
     });
 
-    // Close on Escape key
-    document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape') {
-        var openModal = document.querySelector('.modal.is-open');
-        if (openModal) {
-          openModal.classList.remove('is-open');
-          document.body.classList.remove('modal-open');
-        }
-      }
-    });
+    var printBtn = document.getElementById('readinessPrint');
+    if (printBtn) {
+      printBtn.addEventListener('click', function () {
+        track('checklist_print', { score: update(), page_language: currentLang });
+        window.print();
+      });
+    }
+
+    update();
   }
 
 
@@ -547,12 +375,11 @@
     initSmoothScroll();
     initScrollAnimations();
     initNavbarScroll();
-    initContactForm();
-    initNewsletter();
-    initModals();
+    initConsent();
+    initLeadTracking();
+    initReadinessChecklist();
   }
 
-  // Run on DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
